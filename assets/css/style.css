@@ -4,17 +4,35 @@
 
 * {
    font-family: 'Acme', Courier, monospace;
+   background-color: darkolivegreen;
 }
 
 
 body {
-
-
+    display: flex;
+    flex-direction: column;
 }
 
 
 /* Header Stuff */
 
+header {
+    background-color: whitesmoke;
+    text-align: center;
+}
+/* Added in nav-toggle css from the Love Running Project */
+
+nav {
+    display: none;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
 
 /* Page Content Stuff */
 
@@ -26,23 +44,17 @@ ul {
    list-style-type: none;
    margin: 0;
    padding: 0;
+   background-color: whitesmoke;
+   flex-direction: column;
  }
+
  a {
-   border: 2px solid black;
-   border-radius: 50%;
    width: 5rem;
    padding: 5px 10px;
    text-align: center;
    text-decoration: none;
-   display: inline-block;
-   margin: 4px 2px;
-   border-radius: 16px;
-   font-family: Lato;
- }
-
-
- li {
-   display: inline;
+   color: #3a3a3a;
+   background-color: whitesmoke;
  }
 
 
@@ -66,8 +78,8 @@ ul {
 
 
  h1 {
-   font-family: Roboto, sans-serif;
    text-align: center;
+   background-color: whitesmoke;
  }
 
 
