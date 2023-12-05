@@ -141,6 +141,7 @@ h1 {
 footer {
     margin: 0;
     border: 0;
+    padding: 1em 0;
     background-color: whitesmoke;
     width: 100%;
     display: flex;
