@@ -31,6 +31,11 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
+#title {
+    padding-left: 1rem;
+}
+
 /* Added in nav-toggle css from the Love Running Project */
 
 nav {
@@ -45,6 +50,12 @@ nav {
     display: none;
     justify-content: center;
     background-color: whitesmoke;
+}
+
+.nav-toggle-label {
+    font-size: 175%;
+    padding-right: 1rem;
+    padding-top: 2rem;
 }
 
 /* Page Content Stuff */
@@ -107,6 +118,8 @@ ul {
 /* Footer Stuff */
 
 footer {
+    margin: 0;
+    border: 0;
     background-color: whitesmoke;
     width: 100%;
 }
@@ -140,3 +153,10 @@ footer {
         line-height: 75px;
         margin: 0 0.5rem;
     }
+
+    /* Body Styles for tablet and up media query */
+
+    main {
+        margin-top: 80px;
+    }
+}
