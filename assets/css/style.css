@@ -26,6 +26,7 @@ header {
     position: fixed;
     z-index: 10;
     width: 100%;
+    text-transform: uppercase;
     /* Have dropdown menu appear in line with page title */
     display: flex;
     justify-content: space-between;
@@ -61,15 +62,26 @@ nav {
 
 /* Page Content Stuff */
 
-.align-left a {
+ 
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #3a3a3a;
+    background-color: whitesmoke;
+  }
+
+#practices-page-test {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 main {
+    padding: 0 1rem;
     flex: 1 0 auto;
     margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
 ul {
@@ -77,18 +89,8 @@ ul {
     padding: 0;
     background-color: whitesmoke;
   }
- 
-  a {
-    width: 5rem;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    color: #3a3a3a;
-    background-color: whitesmoke;
-  }
- 
- 
-  nav {
+  
+nav {
     position: absolute;
     left: 0;
     padding: 0 1rem;
@@ -100,25 +102,25 @@ ul {
   }
  
 
-  h1 {
+h1 {
     text-align: center;
     background-color: whitesmoke;
     margin-bottom: 1em;
   }
  
- #menu {
+#menu {
     list-style-type: none;
     flex-direction: column;
     letter-spacing: 2px;
     text-transform: uppercase;
  }
 
- #menu > li {
+#menu > li {
     margin-bottom: 1em;
  }
 
  /* Active webpage class indicator idea taken from Love Running project */
- .active {
+.active {
     border-bottom: 1px solid #3a3a3a;
  }
 
@@ -139,6 +141,12 @@ footer {
 /* Nav Menu media query for tablets and larger */
 @media screen and (min-width: 768px) {
     /* Header */
+
+    #title {
+        font-size: 200%;
+        margin: 2rem 2rem;
+    }
+
     nav {
         display: inline;
         position: relative;
@@ -169,5 +177,9 @@ footer {
 
     main {
         margin-top: 80px;
+    }
+
+    footer {
+    justify-content: space-evenly;
     }
 }
