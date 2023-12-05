@@ -34,6 +34,10 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
+header a:hover {
+    border-bottom: 1px solid #3a3a3a;
+} 
+
 #title {
     padding-left: 1rem;
 }
