@@ -100,14 +100,6 @@ nav {
     /* Top property makes sure dropdown menu always appears below page title */
     top: 100%;
 }
- 
-.align-left {
-    justify-content: flex-start;
-}
-
-.align-right {
-    justify-content: flex-end;
-}
 
 h1 {
     text-align: center;
@@ -115,6 +107,19 @@ h1 {
     margin-bottom: 1em;
 }
  
+.align-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.align-right {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 #menu {
     list-style-type: none;
     flex-direction: column;
