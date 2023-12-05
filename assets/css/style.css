@@ -156,6 +156,9 @@ footer {
     height: 150px;
     border: 1px solid #3a3a3a;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: -10px;
 }
 
 .shape1 {
@@ -164,15 +167,18 @@ footer {
     background-color: #ae608e;
     padding: 1em;
     border: 10px solid #82295d;
-    z-index: 9;
+    z-index: 8;
+    flex-shrink: 1;
+    align-self: flex-start;
 }
 .shape2 {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     background-color: #60aea0;
     padding: 1em;
     border: 10px solid #298250;
-    z-index: 8;
+    z-index: 9;
+    flex-shrink: 0;
 }
 .shape3 {
     width: 25px;
@@ -181,6 +187,8 @@ footer {
     padding: 1em;
     border: 10px solid #382982;
     z-index: 7;
+    flex-shrink: 2;
+    align-self: flex-end;
 }
 /* Media Queries */
 /* Nav Menu media query for tablets and larger */
