@@ -35,7 +35,7 @@ header {
 }
 
 header a:hover {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #262626;
 } 
 
 #title {
@@ -179,40 +179,47 @@ footer {
     width: 100%;
     height: 150px;
     border: 1px solid #3a3a3a;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: -10px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .shape1 {
-    width: 25px;
-    height: 25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
     background-color: #ae608e;
-    padding: 1em;
     border: 10px solid #82295d;
     z-index: 8;
-    flex-shrink: 1;
-    align-self: flex-start;
+  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 .shape2 {
-    width: 50px;
-    height: 50px;
+    width: 100%px;
+    height: 100%;
+    border-radius: 1rem;
     background-color: #60aea0;
-    padding: 1em;
     border: 10px solid #298250;
     z-index: 9;
-    flex-shrink: 0;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 .shape3 {
-    width: 25px;
-    height: 25px;
+    width: 100%p;
+    height: 100%;
+    border-radius: 1rem;
     background-color: #6560ae;
-    padding: 1em;
     border: 10px solid #382982;
     z-index: 7;
-    flex-shrink: 2;
-    align-self: flex-end;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
 }
 /* Media Queries */
 /* Nav Menu media query for tablets and larger */
