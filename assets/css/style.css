@@ -24,7 +24,7 @@ header {
     margin: 0;
     padding: 0;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
     text-transform: uppercase;
     /* Have dropdown menu appear in line with page title */
@@ -234,8 +234,17 @@ footer {
     grid-row-end: 7;
 }
 */
-
-.container {
+#resources-list {
+  position: relative;
+  top: 5rem;
+  list-style-type: none;
+  display: grid;
+  gap: 20rem;
+  grid-template-areas: 
+    "section1"
+    "section2";
+}
+.container1 {
   width: 100%;
   height: 150px;
   border: 1px solid #3a3a3a;
@@ -245,6 +254,7 @@ footer {
   grid-template-columns:
     [book-start] 100px [bg-start] auto [book-end] auto [text-start] auto [bg-end] auto [text-end];
   grid-template-rows: [book-start] auto [text-start] auto [bg-start] auto [text-end] auto [book-end] auto [bg-end];
+  grid-area: section1;
 }
 
 .shape1 {
@@ -276,6 +286,50 @@ footer {
   z-index: 11;
   grid-area: text;
   overflow: scroll;
+}
+
+.container2 {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #3a3a3a;
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+  grid-template-columns:
+    [text2-start] 100px [bg2-start] auto [text2-end] auto [book2-start] auto [bg2-end] auto [book2-end];
+  grid-template-rows: [book2-start] auto [text2-start] auto [bg2-start] auto [text2-end] auto [book2-end] auto [bg2-end];
+  grid-area: section2;
+}
+
+.shape4 {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #ae608e;
+  border: 10px solid #82295d;
+  z-index: 10;
+  grid-area: text2;
+  overflow: scroll;
+/* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+}
+.shape5 {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #60aea0;
+  border: 10px solid #298250;
+  z-index: 9;
+  grid-area: bg2;
+}
+.shape6 {
+  width: 150px;
+  height: 300px;
+  border-radius: 1rem;
+  background-color: #6560ae;
+  border: 10px solid #382982;
+  color: whitesmoke;
+  z-index: 11;
+  grid-area: book2;
 }
 /* Media Queries */
 /* Nav Menu media query for tablets and larger */
