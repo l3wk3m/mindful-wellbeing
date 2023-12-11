@@ -29,24 +29,29 @@
 
 
    <main>
-      <section id="meetup-form-container">
-        <table>
-          <tr>
-            Table Test Item 1
-          </tr>
-          <tr>
-            Table Test Item 2
-          </tr>
-          <tr>
-            Table Test Item 3
-          </tr>
-        </table>
+      <section id="meetup-info">
+        <div id="meetup-info-1">
+          <h2>Meetup dates</h2>
+          <p>Meetups text</p>
+        </div>
+        <div id="meetup-info-2">
+          <table>
+            <tr>
+              <th>Table Test Item 1</th><th>Table Test Item 2</th><th>Table Test Item 3</th>
+            </tr>
+            <tr>
+              <td>1</td><td>2</td><td>3</td>
+            </tr>
+            <tr>
+              <td>4</td><td>5</td><td>6</td>
+            </tr>
+          </table>
+        </div>
+        
         <br>
-        <br>
-        <!---iframe embed code copied from google maps of generic map of dublin--->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152490.77313424464!2d-6.326041624414072!3d53.331291619732106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1702143558226!5m2!1sen!2sie" width="100%" height="200rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
-        <br>
+        
+      </section>
+      <section id="meetup-form">
         <form action="" method="POST" id="form_styles">
           <label for="first_name" id="first_name_label">First Name </label>
           <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
@@ -69,7 +74,7 @@
           <br>
           <br>
           <label for="meetup_dates">What date best suits you for a meetup this week?</label>
-          <input list="available_dates" id="meetup_dates" name="meetup_dates" type="text">
+          <input list="available_dates" id="meetup_dates" name="meetup_dates" type="text" required>
           <datalist id="available_dates" name="available_dates">
             <option value="Tuesday, 20th of January"></option>
             <option value="Thursday, 22nd of January"></option>
@@ -81,6 +86,14 @@
         </form>  
       </section>
       <br>
+     <section>
+       <h1>LOCATIONS</h1>
+       <br>
+       <!---iframe embed code copied from google maps of generic map of dublin--->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152490.77313424464!2d-6.326041624414072!3d53.331291619732106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1702143558226!5m2!1sen!2sie" width="100%" height="200rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <br>
+       <br>
+     </section>
         <section>
             <div class="align-left">
                 <h1>Meet-Ups</h1>

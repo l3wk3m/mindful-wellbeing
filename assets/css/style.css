@@ -106,20 +106,58 @@ nav {
 }
 
 h1 {
-    text-align: center;
+    justify-content: center;
     background-color: whitesmoke;
     margin-bottom: 1em;
 }
- 
-.align-left {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+
+/* Trying a grid approach to the test content on index.html */
+
+.main-container-1 {
+  margin-top: 200px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns:
+    [img-left-start] 1fr [img-left-end] 1fr [text-left-start] 1fr [text-left-end];
+  grid-template-rows: [img-left-start text-left-start] 1fr [img-left-end text-left-end];
 }
 
-.align-right {
+.main-container-2 {
+  margin-top: 400px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns:
+    [text-right-start] 1fr [text-right-end] 1fr [img-right-start] 1fr [img-right-end];
+  grid-template-rows:
+    [img-right-start text-right-start] 1fr [img-right-end text-right-end];
+}
+
+.img-left {
+  grid-area: img-left;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.img-right {
+  grid-area: img-right;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.text-left {
+    grid-area: text-left;
     display: flex;
-    text-align: right;
+    text-align: center;
+    flex-direction: column;
+  
+}
+
+.text-right {
+    grid-area: text-right;
+    display: flex;
+    text-align: center;
     justify-content: flex-end;
     flex-direction: column;
 }
@@ -136,11 +174,50 @@ h1 {
 }
 
 /* Meetups Page Stuff */
-#meetup-form-container {
-  display: flex;
-  flex-direction: column;
+#meetup-info {
+  display: grid;
   justify-content: center;
   align-items: center;
+  gap: 1em;
+  grid-template-columns:
+    1fr [meetup-info-1-start meetup-info-2-start] auto [meetup-info-1-end meetup-info-2-end] 1fr;
+  grid-template-rows: 
+    [meetup-info-1-start] auto [meetup-info-1-end] 1fr [meetup-info-2-start] auto [meetup-info-2-end];
+}
+
+#meetup-info-1 {
+  grid-area: meetup-info-1;
+  text-align: center;
+}
+
+#meetup-info-2 {
+  display: grid;
+  grid-area: meetup-info-2;
+  align-items: center;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  height: 80%;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+
+#meetup-form {
+  margin-top: 40px;
+  display: grid;
+  justify-content: center;
 }
 
 #form-styles {
@@ -345,7 +422,7 @@ footer {
 
     nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         position: relative;
         left: 0;
@@ -406,6 +483,15 @@ footer {
           grid-template-rows: [book2-start] auto [bg2-start] 0.5em [text2-start] auto [text2-end book2-end] auto [bg2-end];
           grid-area: section1;
         }
+  /* Meetups Page for Tablets and Desktop */
+
+  #meetup-info {
+    margin-top: 12em;
+    display: grid;
+    grid-template-columns:
+      [meetup-info-1-start] auto [meetup-info-1-end] 5em [meetup-info-2-start]   auto [meetup-info-2-end];
+    grid-template-rows: [meetup-info-1-start meetup-info-2-start] auto [meetup-  info-1-end meetup-info-2-end];
+  }
 }
 
 /* Media query for desktop */
@@ -437,3 +523,4 @@ footer {
     grid-area: section2;
   }
 }
+
