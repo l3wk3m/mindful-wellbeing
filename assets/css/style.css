@@ -245,6 +245,7 @@ footer {
     "section2";
 }
 .container1 {
+  margin-top: 100px;
   width: 100%;
   height: 150px;
   border: 1px solid #3a3a3a;
@@ -252,8 +253,8 @@ footer {
   gap: 1rem;
   align-content: center;
   grid-template-columns:
-    [book-start] 100px [bg-start] auto [book-end] auto [text-start] auto [bg-end] auto [text-end];
-  grid-template-rows: [book-start] auto [text-start] auto [bg-start] auto [text-end] auto [book-end] auto [bg-end];
+    [bg-start text-start] auto [book-start] auto [book-end] auto [text-end bg-end];
+  grid-template-rows: [book-start] auto [bg-start] auto [book-end] auto [text-start] 200px [text-end] auto [bg-end];
   grid-area: section1;
 }
 
@@ -268,7 +269,7 @@ footer {
 /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
 }
 .shape2 {
-  width: 100%px;
+  width: 100%;
   height: 100%;
   border-radius: 1rem;
   background-color: #60aea0;
@@ -277,7 +278,7 @@ footer {
   grid-area: bg;
 }
 .shape3 {
-  width: 100%p;
+  width: 100%;
   height: 100%;
   border-radius: 1rem;
   background-color: #6560ae;
@@ -285,10 +286,11 @@ footer {
   color: whitesmoke;
   z-index: 11;
   grid-area: text;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .container2 {
+  margin-top: 140px;
   width: 100%;
   height: 150px;
   border: 1px solid #3a3a3a;
@@ -296,8 +298,8 @@ footer {
   gap: 1rem;
   align-content: center;
   grid-template-columns:
-    [text2-start] 100px [bg2-start] auto [text2-end] auto [book2-start] auto [bg2-end] auto [book2-end];
-  grid-template-rows: [book2-start] auto [text2-start] auto [bg2-start] auto [text2-end] auto [book2-end] auto [bg2-end];
+    [bg2-start text2-start] auto [book2-start] auto [book2-end] auto [text2-end bg2-end];
+  grid-template-rows: [book2-start] auto [bg2-start] auto [book2-end] auto [text2-start] 200px [text2-end] auto [bg2-end];
   grid-area: section2;
 }
 
@@ -309,7 +311,7 @@ footer {
   border: 10px solid #82295d;
   z-index: 10;
   grid-area: text2;
-  overflow: scroll;
+  overflow: auto;
 /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
 }
 .shape5 {
@@ -342,7 +344,9 @@ footer {
     }
 
     nav {
-        display: inline;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         position: relative;
         left: 0;
         width: fit-content;
@@ -372,4 +376,64 @@ footer {
     main {
         margin-top: 80px;
     }
+
+    /* Grid stylings for tablet and larger */ 
+
+    .container1 {
+      margin-top: 180px;
+      width: 100%;
+      height: 150px;
+      border: 1px solid #3a3a3a;
+      display: grid;
+      gap: 1rem;
+      align-content: center;
+      grid-template-columns:
+        [bg-start] auto [book-start] auto [book-end] auto [text-start] auto [text-end] auto [bg-end];
+      grid-template-rows: [book-start] auto [bg-start] 0.5em [text-start] auto [text-end book-end] auto [bg-end];
+      grid-area: section1;
+    }
+
+    .container2 {
+      margin-top: 660px;
+      width: 100%;
+      height: 150px;
+      border: 1px solid #3a3a3a;
+      display: grid;
+      gap: 1rem;
+      align-content: center;
+      grid-template-columns:
+            [bg2-start] auto [text2-start] auto [text2-end] auto [book2-start] auto [book2-end] auto [bg2-end];
+          grid-template-rows: [book2-start] auto [bg2-start] 0.5em [text2-start] auto [text2-end book2-end] auto [bg2-end];
+          grid-area: section1;
+        }
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 920px) {
+  .container1 {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #3a3a3a;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [book-start] 100px [bg-start] auto [book-end] auto [text-start] auto [bg-end] auto [text-end];
+    grid-template-rows: [book-start] auto [text-start] auto [bg-start] auto [text-end] auto [book-end] auto [bg-end];
+    grid-area: section1;
+  }
+  
+  .container2 {
+    margin-top: 1em;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #3a3a3a;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [text2-start] 100px [bg2-start] auto [text2-end] auto [book2-start] auto [bg2-end] auto [book2-end];
+    grid-template-rows: [book2-start] auto [text2-start] auto [bg2-start] auto [text2-end] auto [book2-end] auto [bg2-end];
+    grid-area: section2;
+  }
 }
