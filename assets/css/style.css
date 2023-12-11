@@ -175,6 +175,8 @@ footer {
 }
 
 /* Containers for testing the layout of the Resources page */
+
+/* Temporarily disabling to try a different grid approach...
 .container {
     width: 100%;
     height: 150px;
@@ -182,6 +184,15 @@ footer {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.book-image {
+  width: 100px;
+  height: 200px;
+  background-color: black;
+  z-index: 11;
+  grid-column: 2/4;
+  grid-row: 1/4;
 }
 
 .shape1 {
@@ -192,10 +203,11 @@ footer {
     border: 10px solid #82295d;
     z-index: 8;
   /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+/*
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 .shape2 {
     width: 100%px;
@@ -206,8 +218,8 @@ footer {
     z-index: 9;
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
 }
 .shape3 {
     width: 100%p;
@@ -215,11 +227,55 @@ footer {
     border-radius: 1rem;
     background-color: #6560ae;
     border: 10px solid #382982;
-    z-index: 7;
+    z-index: 11;
     grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+*/
+
+.container {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #3a3a3a;
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+  grid-template-columns:
+    [book-start] 100px [bg-start] auto [book-end] auto [text-start] auto [bg-end] auto [text-end];
+  grid-template-rows: [book-start] auto [text-start] auto [bg-start] auto [text-end] auto [book-end] auto [bg-end];
+}
+
+.shape1 {
+  width: 150px;
+  height: 300px;
+  border-radius: 1rem;
+  background-color: #ae608e;
+  border: 10px solid #82295d;
+  z-index: 10;
+  grid-area: book;
+/* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+}
+.shape2 {
+  width: 100%px;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #60aea0;
+  border: 10px solid #298250;
+  z-index: 9;
+  grid-area: bg;
+}
+.shape3 {
+  width: 100%p;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #6560ae;
+  border: 10px solid #382982;
+  color: whitesmoke;
+  z-index: 11;
+  grid-area: text;
+  overflow: scroll;
 }
 /* Media Queries */
 /* Nav Menu media query for tablets and larger */
