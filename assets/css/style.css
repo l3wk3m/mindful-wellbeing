@@ -552,5 +552,17 @@ footer {
     grid-template-rows: [book2-start] auto [text2-start] auto [bg2-start] auto [text2-end] auto [book2-end] auto [bg2-end];
     grid-area: section2;
   }
+
+  nav {
+    box-shadow: none;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: none;
+  }
 }
 
