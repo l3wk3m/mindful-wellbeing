@@ -218,6 +218,29 @@ th, td {
   margin-top: 40px;
   display: grid;
   justify-content: center;
+  align-items: center;
+  gap: 1em;
+  grid-template-areas: 
+    "input-block-1"
+    "input-block-2"
+    "input-block-3"
+    "input-map";
+}
+
+#input-block-1 {
+  grid-area: input-block-1;
+}
+
+#input-block-2 {
+  grid-area: input-block-2;
+}
+
+#input-block-3 {
+  grid-area: input-block-3;
+}
+
+#input-map {
+  grid-area: input-map;
 }
 
 #form-styles {
@@ -491,6 +514,13 @@ footer {
     grid-template-columns:
       [meetup-info-1-start] auto [meetup-info-1-end] 5em [meetup-info-2-start]   auto [meetup-info-2-end];
     grid-template-rows: [meetup-info-1-start meetup-info-2-start] auto [meetup-  info-1-end meetup-info-2-end];
+  }
+
+  #meetup-form {
+    grid-template-areas: 
+      "input-block-1 input-map input-map"
+      "input-block-2 input-map input-map"
+      "input-block-3 input-map input-map";
   }
 }
 
