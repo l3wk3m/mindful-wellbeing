@@ -29,7 +29,8 @@
 
 
    <main>
-      <section id="meetup-info">
+    <section id="meetups-1">
+      <div id="meetup-info">
         <div id="meetup-info-1">
           <h2>Meetup dates</h2>
           <p>Meetups text</p>
@@ -47,14 +48,13 @@
             </tr>
           </table>
         </div>
-        
+    </section>
         <br>
-        
-      </section>
-      <section id="meetup-form">
-        <h1>Let us know you're coming!</h1>
+    <section id="meetups-2">
+    <div id="meetup-form">
+        <div id="input-blocks">
           <form action="" method="POST" id="form_styles">
-          <div id="input-block-1">
+            <h1>Let us know you're coming!</h1>
             <label for="first_name" id="first_name_label">First Name </label>
             <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
           <br>
@@ -63,10 +63,8 @@
           <br>
             <label for="email" id="email_label">Email </label>
             <input type="email" id="email" name="email" placeholder="Email" required>
-          </div>
           <br>
           <br>
-          <div id="input-block-2">
             <h2>How many of our meetups have you come to before now?</h2>
             <br>
             <input type="radio" id="first_time" name="experience" value="first_time">
@@ -75,10 +73,8 @@
             <label for="one_to_five_times" id="one_to_five_times_label">Between one and five meetups!</label>
             <input type="radio" id="more-than-five-times" name="experience" value="more_than_five_times">
             <label for="more_than_five_times" id="more_than_five_times_label">More than five meetups!</label>
-          </div>
           <br>
           <br>
-          <div id="input-block-3">
             <label for="meetup_dates">What date best suits you for a   meetup this week?</label>
           <input list="available_dates" id="meetup_dates" name="meetup_dates" type="text" required>
             <datalist id="available_dates" name="available_dates">
@@ -89,19 +85,18 @@
             <br>
             <br>
             <input type="submit" value="Sign me up" id="submit_button">
-          </div>
         </form> 
-      
+        </div>
         <br>
-        <section id="input-map">
-          <h1>LOCATIONS</h1>
-          <br>
+    <div id="input-map">
+        <h1>LOCATIONS</h1>
+        <br>
        <!---iframe embed code copied from google maps of generic map of dublin--->
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152490.77313424464!2d-6.326041624414072!3d53.331291619732106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1702143558226!5m2!1sen!2sie" width="100%" height="200rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
         <br>
         <br>
-      </section>
-        </section>
+    </section>
         <section>
             <div class="align-left">
                 <h1>Meet-Ups</h1>

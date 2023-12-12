@@ -141,7 +141,7 @@ h1 {
 }
 
 /* Trying a grid approach to the test content on index.html */
-
+/*
 .main-container-1 {
   display: grid;
   justify-content: center;
@@ -160,7 +160,7 @@ h1 {
   grid-template-rows:
     [img-right-start text-right-start] 1fr [img-right-end text-right-end];
 }
-
+*/
 #first-div-index {
     margin-top: 12em;
 }
@@ -190,27 +190,28 @@ h1 {
 }
 
 /* Meetups Page Stuff */
-#meetup-info {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  grid-template-columns:
-    1fr [meetup-info-1-start meetup-info-2-start] auto [meetup-info-1-end meetup-info-2-end] 1fr;
-  grid-template-rows: 
-    [meetup-info-1-start] auto [meetup-info-1-end] 1fr [meetup-info-2-start] auto [meetup-info-2-end];
+#meetups-1 {
+    display: flex;
+    justify-content: center;
 }
 
-#meetup-info-1 {
-  grid-area: meetup-info-1;
-  text-align: center;
+#meetup-info {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 80%;
+    grid-template-rows: repeat(2, 40%);
 }
 
 #meetup-info-2 {
-  display: grid;
-  grid-area: meetup-info-2;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#input-map {
+    text-align: center;
 }
 
 table {
@@ -228,35 +229,21 @@ th, td {
   text-align: center;
 }
 
-
+#meetups-2 {
+    display: flex;
+    justify-content: center;
+}
 
 #meetup-form {
-  margin-top: 40px;
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 1em;
-  grid-template-areas: 
-    "input-block-1"
-    "input-block-2"
-    "input-block-3"
-    "input-map";
+  width: 80%;
 }
 
-#input-block-1 {
-  grid-area: input-block-1;
-}
-
-#input-block-2 {
-  grid-area: input-block-2;
-}
-
-#input-block-3 {
-  grid-area: input-block-3;
-}
-
-#input-map {
-  grid-area: input-map;
+#input-blocks {
+    text-align: center;
 }
 
 #form-styles {
@@ -536,16 +523,22 @@ footer {
   #meetup-info {
     margin-top: 12em;
     display: grid;
-    grid-template-columns:
-      [meetup-info-1-start] auto [meetup-info-1-end] 5em [meetup-info-2-start]   auto [meetup-info-2-end];
-    grid-template-rows: [meetup-info-1-start meetup-info-2-start] auto [meetup-  info-1-end meetup-info-2-end];
+    grid-template-columns: repeat(2, 40%);
   }
 
   #meetup-form {
-    grid-template-areas: 
-      "input-block-1 input-map input-map"
-      "input-block-2 input-map input-map"
-      "input-block-3 input-map input-map";
+    grid-template-columns: repeat(2, 40%);
+    align-items: start;
+  }
+
+  #input-blocks {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  #input-map {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
   }
 }
 
