@@ -30,7 +30,7 @@ header {
     /* Have dropdown menu appear in line with page title */
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
@@ -39,7 +39,10 @@ header a:hover {
 } 
 
 #title {
-    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+    padding-left: 1em;
 }
 
 /* Added in nav-toggle css from the Love Running Project */
@@ -61,7 +64,6 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
     padding-right: 1rem;
-    padding-top: 2rem;
 }
 
 /* Page Content Stuff */
@@ -72,6 +74,8 @@ a {
     text-decoration: none;
     color: #3a3a3a;
     background-color: whitesmoke;
+    display: flex;
+    align-items: center;
 }
 
 #practices-page-test {
@@ -440,7 +444,7 @@ footer {
 
     #title {
         font-size: 200%;
-        margin: 2rem 2rem;
+        padding: 1em;
     }
 
     nav {
@@ -448,13 +452,13 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         position: relative;
-        left: 0;
-        width: fit-content;
-        padding-right: 1rem;
+        justify-content: flex-end;
+        box-shadow: none;
     }
 
     #menu {
         display: flex;
+        flex-direction: row;
     }
 
     #menu > li {
