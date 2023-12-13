@@ -98,6 +98,31 @@ main {
     align-items: center;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+  
+nav {
+    position: absolute;
+    left: 0;
+    padding: 0 1rem;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 2px #3a3a3a;
+    width: 100%;
+    /* Top property makes sure dropdown menu always appears below page title */
+    top: 100%;
+}
+
+h1 {
+    justify-content: center;
+    background-color: whitesmoke;
+    margin-bottom: 1em;
+}
+
+/* Landing section for home page */
+
 #main-landing {
     width: 100%;
 }
@@ -126,27 +151,64 @@ main {
     margin-bottom: 1rem;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
-}
-  
-nav {
-    position: absolute;
-    left: 0;
-    padding: 0 1rem;
-    background-color: whitesmoke;
-    box-shadow: 0 2px 2px #3a3a3a;
+/* Resources section for home page */
+
+#resources-landing {
     width: 100%;
-    /* Top property makes sure dropdown menu always appears below page title */
-    top: 100%;
 }
 
-h1 {
-    justify-content: center;
-    background-color: whitesmoke;
-    margin-bottom: 1em;
+#bg-img-resources {
+    margin-bottom: 2rem;
+    height: 12rem;
+    width: 100%;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+#landing-text-resources {
+    background-color: #298250;
+    text-align: center;
+    border: 1px solid #262626;
+    height: 8rem;
+    width: 8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Landing section for Meetups page */
+
+#meetups-landing {
+    width: 100%;
+}
+
+#bg-img-meetups {
+    margin-bottom: 2rem;
+    height: 12rem;
+    width: 100%;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+#landing-text-meetups {
+    background-color: #298250;
+    text-align: center;
+    border: 1px solid #262626;
+    height: 8rem;
+    width: 8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Commenting out the below grid approach to try and simplify the whole contents of the page into one grid for mobile devices, which will be reorganised for tablets and desktop in a later media query */
@@ -230,6 +292,9 @@ h1 {
 
 #input-map {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 table {
