@@ -98,7 +98,11 @@ main {
     align-items: center;
 }
 
-.bg-img {
+#main-landing {
+    width: 100%;
+}
+
+#bg-img-home {
     margin-bottom: 2rem;
     height: 12rem;
     width: 100%;
@@ -106,6 +110,20 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+#landing-text-home {
+    background-color: #298250;
+    text-align: center;
+    border: 1px solid #262626;
+    height: 8rem;
+    width: 8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 ul {
