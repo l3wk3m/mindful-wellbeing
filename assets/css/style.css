@@ -300,11 +300,12 @@ h1 {
 table {
   width: 80%;
   height: 80%;
+  /* Add styling to the table border */
 }
 
 tr {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 th, td {
