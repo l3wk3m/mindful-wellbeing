@@ -683,17 +683,13 @@ footer {
 }
 */
 #resources-list {
-  position: relative;
   top: 5rem;
-  list-style-type: none;
-  display: grid;
-  gap: 20rem;
-  grid-template-areas: 
-    "section1"
-    "section2";
+  display: flex;
+  flex-direction: column;
+
 }
 .container1 {
-  margin-top: 100px;
+  margin: 150px 0;
   width: 100%;
   height: 150px;
   border: 1px solid #3a3a3a;
@@ -710,6 +706,7 @@ footer {
   width: 150px;
   height: 300px;
   border-radius: 1rem;
+  background-image: url('/assets/images/NonviolentCommunication.jpg');
   background-color: #ae608e;
   border: 10px solid #82295d;
   z-index: 10;
@@ -738,7 +735,7 @@ footer {
 }
 
 .container2 {
-  margin-top: 140px;
+  margin: 150px 0;
   width: 100%;
   height: 150px;
   border: 1px solid #3a3a3a;
@@ -755,7 +752,6 @@ footer {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  background-image: url('HoldMeTight.jpg');
   background-color: #ae608e;
   border: 10px solid #82295d;
   z-index: 10;
@@ -773,11 +769,10 @@ footer {
   grid-area: bg2;
 }
 .shape6 {
-  width: 150px;
-  height: 300px;
-  border-radius: 1rem;
-  background-color: #6560ae;
-  border: 10px solid #382982;
+  width: 148px;
+  height: 241px;
+  background-image: url('/assets/images/HoldMeTight.jpeg');
+  background-repeat: no-repeat;
   color: whitesmoke;
   z-index: 11;
   grid-area: book2;
