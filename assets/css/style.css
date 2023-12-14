@@ -132,16 +132,17 @@ h1 {
 
 #main-landing {
     width: 100%;
+    background-color: #298250;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: solid 1px black;
 }
 
 #bg-img-home {
     margin-bottom: 2rem;
     height: 400px;
     width: 100%;
-    background-image: url("/assets/images/hero_image.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -198,10 +199,11 @@ h1 {
     margin-bottom: 2rem;
     height: 12rem;
     width: 100%;
-    background-color: gold;
+    background-image: url('/assets/images/hero_image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -306,7 +308,6 @@ h1 {
     width: 150px;
     /* Set top to 270px so it will stick onto the image above which has a height of 150px and a top of 120px - 150 + 120 = 270 */
     top: 270px;
-    border: solid 1px black;
     grid-area: backpack1;
     justify-self: end;
 }
@@ -317,7 +318,6 @@ h1 {
     height: 150px;
     width: 122px;
     top: 120px;
-    border: solid 1px black;
     grid-area: backpack2;
     justify-self: end;
 }
@@ -328,7 +328,6 @@ h1 {
     height: 150px;
     width: 150px;
     top: 420px;
-    border: solid 1px black;
     grid-area: backpack3;
     justify-self: end;
 }
@@ -339,7 +338,6 @@ h1 {
     height: 150px;
     width: 122px;
     top: 570px;
-    border: solid 1px black;
     grid-area: backpack4;
     justify-self: start;
 }
@@ -351,7 +349,6 @@ h1 {
     width: 141px;
     top: 120px;
     right: 2rem;
-    border: solid 1px black;
     grid-area: suitcase1;
     justify-self: center;
 }
@@ -362,7 +359,6 @@ h1 {
     height: 150px;
     width: 114px;
     top: 270px;
-    border: solid 1px black;
     grid-area: suitcase2;
     justify-self: center;
 }
@@ -373,7 +369,6 @@ h1 {
     height: 150px;
     width: 141px;
     top: 420px;
-    border: solid 1px black;
     grid-area: suitcase3;
     justify-self: center;
 }
@@ -384,7 +379,6 @@ h1 {
     height: 150px;
     width: 114px;
     top: 570px;
-    border: solid 1px black;
     grid-area: suitcase4;
     justify-self: center;
 }
@@ -394,7 +388,6 @@ h1 {
 }
 
 #experience-text-1 > p {
-    font-size: 175%;
     text-align: center;
 }
 
@@ -403,7 +396,6 @@ h1 {
 }
 
 #experience-text-2 > p {
-    font-size: 175%;
     text-align: center;
 }
 
@@ -412,7 +404,6 @@ h1 {
 }
 
 #experience-text-3 > p {
-    font-size: 175%;
     text-align: center;
 }
 
@@ -421,7 +412,6 @@ h1 {
 }
 
 #experience-text-4 > p {
-    font-size: 175%;
     text-align: center;
 }
 
@@ -430,7 +420,6 @@ h1 {
 }
 
 #experience-text-5 > p {
-    font-size: 175%;
     text-align: center;
 }
 
@@ -439,7 +428,6 @@ h1 {
 }
 
 #experience-text-6 > p {
-    font-size: 175%;
     text-align: center;
 }
 
@@ -448,7 +436,6 @@ h1 {
 }
 
 #experience-text-7 > p {
-    font-size: 175%;
     text-align: center;
 }
 
@@ -457,7 +444,6 @@ h1 {
 }
 
 #experience-text-8 > p {
-    font-size: 175%;
     text-align: center;
 }
 
@@ -517,6 +503,7 @@ h1 {
 #meetups-1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 #meetup-info {
@@ -539,6 +526,7 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex-shrink: 1;
 }
 
 table {
