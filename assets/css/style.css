@@ -620,6 +620,11 @@ td {
     align-items: center;
 }
 
+#submit_button:hover {
+    background-color: #424242;
+    color: #c0c0c0;
+}
+
 table {
     border: 1px solid black;
 }
