@@ -248,7 +248,6 @@ h1 {
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
-/* Commenting out the below grid approach to try and simplify the whole contents of the page into one grid for mobile devices, which will be reorganised for tablets and desktop in a later media query */
 
 .main-container {
     display: grid;
@@ -256,6 +255,18 @@ h1 {
     width: 80%;
     justify-content: center;
 }
+
+.backpack1{
+    background-image: url('/assets/images/backpack_1.png');
+    position: sticky;
+    height: 150px;
+    width: 150px;
+    top: 120px;
+    border: solid 1px black;
+}
+
+/* Commenting out the below grid approach to try and simplify the whole contents of the page into one grid for mobile devices, which will be reorganised for tablets and desktop in a later media query */
+
 
 /* Trying a grid approach to the test content on index.html */
 /*
