@@ -278,10 +278,17 @@ h1 {
     text-align: center;
 }
 
+.experience-container {
+    display: grid;
+    gap: 2rem;
+    width: 80%;
+    justify-content: center;
+}
+
 .baggage1 {
     display: grid;
     justify-content: center;
-    grid-template-columns: 4rem 20% 20% 4rem;
+    grid-template-columns: 4rem 15% 15% 4rem;
     grid-template-rows: repeat(20, 150px);
     gap: 1rem;
     grid-template-areas: 
@@ -304,6 +311,7 @@ h1 {
         '. . . .'
         'et8 . . .'
         '. . . .';
+    overflow-x: hidden;
 }
 
 .baggage2 {
@@ -312,7 +320,7 @@ h1 {
     grid-template-columns: repeat(2, 40%);
     grid-template-areas: 
         '. et9';
-    margin: 5rem 0;
+    margin: 20rem 0;
 }
 
 .baggage2 > p {
@@ -834,6 +842,7 @@ footer {
     .main-container {
         grid-template-columns: repeat(2, 40%);
     }
+    
 
     .container1 {
       margin-top: 180px;
@@ -883,6 +892,11 @@ footer {
   #input-map {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+  }
+
+  /* Experience Page for tablet and desktop */
+  .baggage2 > p {
+    align-self: flex-end;
   }
 }
 
