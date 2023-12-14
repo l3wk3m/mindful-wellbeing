@@ -9,11 +9,12 @@ For these kind of users, this website should impart a sense of calm that tick th
 
 To this end I had move from my initial design ideas of using multiple muted colours, as pictured in my original wireframe below
 
-![original wireframe](file:///workspaces/mindful-wellbeing/assets/images/original%20wireframe.png)
+![original wireframe](/workspaces/mindful-wellbeing/assets/images/original wireframe.png)
 
 
 To a completely monochromatic look.
 
+![Monochromatic Home Page](/workspaces/mindful-wellbeing/assets/images/monochromatic.png)
 
 Using various shades of grey was the most visually appealing approach for ensuring the user’s experience was one that favoured minimalism and peacefulness.
 
@@ -34,6 +35,8 @@ The purpose of the experience page is to have the user scroll down the page. The
 *****
 
 Here the first thing the user will encounter is the nav bar. This is fixed to the top of the page so the user will at all points have a portal for hopping from page to page. The design of the drop-down menu for smartphone displays was taken and adapted from the Love Running Project, though that will be credited in much greater detail at the end of this ReadMe.
+
+
 
 The Home Page will then welcome the user to the project, giving them an up front short summary of what they can expect when navigating Mindful Wellbeing.
 
@@ -68,7 +71,7 @@ It was also passed through W3 HTML Validator and the W3 CSS Validator.
 
 Both caught minor bugs but once addressed they passed this validation with flying colours
 
-![W3CSS](file:///workspaces/mindful-wellbeing/assets/images/w3css.png)
+![W3CSS](/workspaces/mindful-wellbeing/assets/images/w3css.png)
 
 **Bug Fixing**
 
