@@ -965,7 +965,7 @@ footer {
     }
 
     header > a {
-        padding-left: none;
+        padding-left: 0;
     }
 
     /* Body Styles for tablet and up media query */
