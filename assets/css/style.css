@@ -1,22 +1,20 @@
 /* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Pacifico&family=Satisfy&family=Sintony:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Pacifico&family=Satisfy&family=Sintony:wght@400;700&display=swap");
 
 /* Title will be Pacifico. Main text will be Caveat... */
 
 * {
-   padding: 0;
-   margin: 0;
+    padding: 0;
+    margin: 0;
 }
-
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Caveat', Courier, monospace;
+    font-family: "Caveat", Courier, monospace;
     color: #3a3a3a;
 }
-
 
 /* Header Stuff */
 
@@ -36,20 +34,20 @@ header {
 }
 
 span {
-    font-family: 'Pacifico', Courier, monospace;
+    font-family: "Pacifico", Courier, monospace;
 }
 
 header > a {
     padding-top: 2rem;
     padding-left: 2rem;
-    font-family: 'Pacifico', Courier, monospace;
+    font-family: "Pacifico", Courier, monospace;
     text-transform: none;
     color: #262626;
 }
 
 header a:hover {
     border-bottom: 1px solid #262626;
-} 
+}
 
 #title {
     display: flex;
@@ -62,7 +60,7 @@ nav {
     display: none;
 }
 
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
     display: block;
 }
 
@@ -79,7 +77,6 @@ nav {
 
 /* Page Content Stuff */
 
- 
 a {
     text-align: center;
     text-decoration: none;
@@ -121,7 +118,7 @@ ul {
     padding: 0;
     background-color: whitesmoke;
 }
-  
+
 nav {
     position: absolute;
     left: 0;
@@ -152,7 +149,7 @@ h1 {
 
 #bg-img-home {
     margin-bottom: 2rem;
-    background-image: url('../images/alseep_in_car.jpg');
+    background-image: url("../images/alseep_in_car.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -180,7 +177,7 @@ h1 {
 }
 
 #landing-text-home > h2 {
-    font-family: 'Satisfy', Courier, monospace;
+    font-family: "Satisfy", Courier, monospace;
 }
 
 /* Resources section for home page */
@@ -198,7 +195,7 @@ h1 {
     margin-bottom: 2rem;
     height: 30rem;
     width: 100%;
-    background-image: url('../images/resources.jpg');
+    background-image: url("../images/resources.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,7 +226,7 @@ h1 {
     margin-bottom: 2rem;
     height: 30rem;
     width: 100%;
-    background-image: url('../images/hero_image.jpg');
+    background-image: url("../images/hero_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -250,7 +247,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-
 /* Landing section for Experience page */
 
 #experience-landing {
@@ -261,7 +257,7 @@ h1 {
     margin-bottom: 2rem;
     height: 30rem;
     width: 100%;
-    background-image: url('../images/space.jpg');
+    background-image: url("../images/space.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -310,46 +306,45 @@ h1 {
     grid-template-columns: 4rem 15% 15% 4rem;
     grid-template-rows: repeat(20, 150px);
     gap: 1rem;
-    grid-template-areas: 
-        '. . . .'
-        '. backpack2 . .'
-        '. . . et1'
-        '. . suitcase1 .'
-        'et2 . . .'
-        '. suitcase2 . .'
-        '. . . et3'
-        '. . backpack1 .'
-        'et4 . . .'
-        '. backpack3 . .'
-        '. . . et5'
-        '. . suitcase3 .'
-        'et6 . . .'
-        '. suitcase4 . .'
-        '. . . et7'
-        '. . backpack4 .'
-        '. . . .'
-        'et8 . . .'
-        '. . . .';
+    grid-template-areas:
+        ". . . ."
+        ". backpack2 . ."
+        ". . . et1"
+        ". . suitcase1 ."
+        "et2 . . ."
+        ". suitcase2 . ."
+        ". . . et3"
+        ". . backpack1 ."
+        "et4 . . ."
+        ". backpack3 . ."
+        ". . . et5"
+        ". . suitcase3 ."
+        "et6 . . ."
+        ". suitcase4 . ."
+        ". . . et7"
+        ". . backpack4 ."
+        ". . . ."
+        "et8 . . ."
+        ". . . .";
 }
 
 .baggage2 {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 40%);
-    grid-template-areas: 
-        '. et9';
+    grid-template-areas: ". et9";
     margin: 20rem 0;
 }
 
 .baggage2 > p {
     justify-self: end;
-    font-family: 'Pacifico', Courier, monospace;
+    font-family: "Pacifico", Courier, monospace;
     grid-area: et9;
     font-size: 280%;
 }
 
 #backpack1 {
-    background-image: url('../images/backpack_1.png');
+    background-image: url("../images/backpack_1.png");
     position: sticky;
     height: 150px;
     width: 150px;
@@ -360,7 +355,7 @@ h1 {
 }
 
 #backpack2 {
-    background-image: url('../images/backpack_2.png');
+    background-image: url("../images/backpack_2.png");
     position: sticky;
     height: 150px;
     width: 122px;
@@ -370,7 +365,7 @@ h1 {
 }
 
 #backpack3 {
-    background-image: url('../images/backpack_1.png');
+    background-image: url("../images/backpack_1.png");
     position: sticky;
     height: 150px;
     width: 150px;
@@ -380,7 +375,7 @@ h1 {
 }
 
 #backpack4 {
-    background-image: url('../images/backpack_2.png');
+    background-image: url("../images/backpack_2.png");
     position: sticky;
     height: 150px;
     width: 122px;
@@ -390,7 +385,7 @@ h1 {
 }
 
 #suitcase1 {
-    background-image: url('../images/suitcase_1.png');
+    background-image: url("../images/suitcase_1.png");
     position: sticky;
     height: 150px;
     width: 141px;
@@ -401,7 +396,7 @@ h1 {
 }
 
 #suitcase2 {
-    background-image: url('../images/suitcase_2.png');
+    background-image: url("../images/suitcase_2.png");
     position: sticky;
     height: 150px;
     width: 114px;
@@ -411,7 +406,7 @@ h1 {
 }
 
 #suitcase3 {
-    background-image: url('../images/suitcase_1.png');
+    background-image: url("../images/suitcase_1.png");
     position: sticky;
     height: 150px;
     width: 141px;
@@ -421,7 +416,7 @@ h1 {
 }
 
 #suitcase4 {
-    background-image: url('../images/suitcase_2.png');
+    background-image: url("../images/suitcase_2.png");
     position: sticky;
     height: 150px;
     width: 114px;
@@ -528,22 +523,20 @@ h1 {
     justify-self: center;
 }
 
-
 #first-div-index {
     margin-top: 12em;
 }
 
 .main-img {
-  width: 100%;
-  height: 100%;
-  background-color: black;
+    width: 100%;
+    height: 100%;
+    background-color: black;
 }
 
-.main-text{
+.main-text {
     display: flex;
     text-align: center;
     flex-direction: column;
-  
 }
 
 #menu {
@@ -588,18 +581,19 @@ h1 {
 }
 
 table {
-  width: 80%;
-  height: 80%;
+    width: 80%;
+    height: 80%;
 }
 
 tr {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-th, td {
-  border: 1px solid black;
-  text-align: center;
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
 }
 
 #meetups-2 {
@@ -608,11 +602,11 @@ th, td {
 }
 
 #meetup-form {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  width: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 80%;
 }
 
 #input-blocks {
@@ -620,18 +614,17 @@ th, td {
 }
 
 #form-styles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 table {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
-
- /* Active webpage class indicator idea taken from Love Running project */
+/* Active webpage class indicator idea taken from Love Running project */
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
@@ -653,99 +646,96 @@ footer {
 /* Containers for testing the layout of the Resources page */
 
 #resources-list {
-  top: 5rem;
-  display: flex;
-  flex-direction: column;
-
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
 }
 .container1 {
-  margin: 300px 0;
-  width: 100%;
-  height: 150px;
-  display: grid;
-  gap: 1rem;
-  align-content: center;
-  grid-template-columns:
-    [bg-start text-start] auto [book-start] auto [book-end] auto [text-end bg-end];
-  grid-template-rows: [book-start] auto [bg-start] auto [book-end] auto [text-start] 200px [text-end] auto [bg-end];
-  grid-area: section1;
+    margin: 300px 0;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns: [bg-start text-start] auto [book-start] auto [book-end] auto [text-end bg-end];
+    grid-template-rows: [book-start] auto [bg-start] auto [book-end] auto [text-start] 200px [text-end] auto [bg-end];
+    grid-area: section1;
 }
 
 .shape1 {
-  width: 200px;
-  height: 300px;
-  border-radius: 1rem;
-  background-image: url('../images/NonviolentCommunication.jpg');
-  background-color: #ae608e;
-  border: 10px solid #82295d;
-  z-index: 10;
-  grid-area: book;
-/* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+    width: 200px;
+    height: 300px;
+    border-radius: 1rem;
+    background-image: url("../images/NonviolentCommunication.jpg");
+    background-color: #ae608e;
+    border: 10px solid #82295d;
+    z-index: 10;
+    grid-area: book;
+    /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
 }
 .shape2 {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  background-color: #828282;
-  z-index: 9;
-  grid-area: bg;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #828282;
+    z-index: 9;
+    grid-area: bg;
 }
 .shape3 {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-  background-color: #ae608e;
-  text-align: center;
-  color: whitesmoke;
-  z-index: 11;
-  grid-area: text;
-  overflow: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #ae608e;
+    text-align: center;
+    color: whitesmoke;
+    z-index: 11;
+    grid-area: text;
+    overflow: auto;
 }
 
 .container2 {
-  margin: 300px 0;
-  width: 100%;
-  height: 150px;
-  display: grid;
-  gap: 1rem;
-  align-content: center;
-  grid-template-columns:
-    [bg2-start text2-start] auto [book2-start] auto [book2-end] auto [text2-end bg2-end];
-  grid-template-rows: [book2-start] auto [bg2-start] auto [book2-end] auto [text2-start] 200px [text2-end] auto [bg2-end];
-  grid-area: section2;
+    margin: 300px 0;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns: [bg2-start text2-start] auto [book2-start] auto [book2-end] auto [text2-end bg2-end];
+    grid-template-rows: [book2-start] auto [bg2-start] auto [book2-end] auto [text2-start] 200px [text2-end] auto [bg2-end];
+    grid-area: section2;
 }
 
 .shape4 {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-  background-color: #7060ae;
-  text-align: center;
-  color: whitesmoke;
-  z-index: 10;
-  grid-area: text2;
-  overflow: auto;
-/* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #7060ae;
+    text-align: center;
+    color: whitesmoke;
+    z-index: 10;
+    grid-area: text2;
+    overflow: auto;
+    /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
 }
 .shape5 {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  background-color: #828282;
-  z-index: 9;
-  grid-area: bg2;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #828282;
+    z-index: 9;
+    grid-area: bg2;
 }
 .shape6 {
-  width: 185px;
-  height: 300px;
-  background-image: url('../images/HoldMeTight.jpg');
-  background-color: #7060ae;
-  border: 10px solid #412982;
-  border-radius: 1rem;
-  background-repeat: no-repeat;
-  color: whitesmoke;
-  z-index: 11;
-  grid-area: book2;
+    width: 185px;
+    height: 300px;
+    background-image: url("../images/HoldMeTight.jpg");
+    background-color: #7060ae;
+    border: 10px solid #412982;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    z-index: 11;
+    grid-area: book2;
 }
 
 .container3 {
@@ -755,32 +745,31 @@ footer {
     display: grid;
     gap: 1rem;
     align-content: center;
-    grid-template-columns:
-      [bg3-start text3-start] auto [book3-start] auto [book3-end] auto [text3-end bg3-end];
+    grid-template-columns: [bg3-start text3-start] auto [book3-start] auto [book3-end] auto [text3-end bg3-end];
     grid-template-rows: [book3-start] auto [bg3-start] auto [book3-end] auto [text3-start] 200px [text3-end] auto [bg3-end];
     grid-area: section1;
-  }
-  
-  .shape7 {
+}
+
+.shape7 {
     width: 200px;
     height: 300px;
     border-radius: 1rem;
-    background-image: url('../images/NoBadParts.jpg');
+    background-image: url("../images/NoBadParts.jpg");
     background-color: #ae608e;
     border: 10px solid #82295d;
     z-index: 10;
     grid-area: book3;
-  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
-  }
-  .shape8 {
+    /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+}
+.shape8 {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
     background-color: #828282;
     z-index: 9;
     grid-area: bg3;
-  }
-  .shape9 {
+}
+.shape9 {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
@@ -790,22 +779,21 @@ footer {
     z-index: 11;
     grid-area: text3;
     overflow: auto;
-  }
+}
 
-  .container4 {
+.container4 {
     margin: 300px 0;
     width: 100%;
     height: 150px;
     display: grid;
     gap: 1rem;
     align-content: center;
-    grid-template-columns:
-      [bg4-start text4-start] auto [book4-start] auto [book4-end] auto [text4-end bg4-end];
+    grid-template-columns: [bg4-start text4-start] auto [book4-start] auto [book4-end] auto [text4-end bg4-end];
     grid-template-rows: [book4-start] auto [bg4-start] auto [book4-end] auto [text4-start] 200px [text4-end] auto [bg4-end];
     grid-area: section2;
-  }
-  
-  .shape10 {
+}
+
+.shape10 {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
@@ -815,20 +803,20 @@ footer {
     z-index: 10;
     grid-area: text4;
     overflow: auto;
-  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
-  }
-  .shape11 {
+    /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+}
+.shape11 {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
     background-color: #828282;
     z-index: 9;
     grid-area: bg4;
-  }
-  .shape12 {
+}
+.shape12 {
     width: 187px;
     height: 300px;
-    background-image: url('../images/Resilient.jpg');
+    background-image: url("../images/Resilient.jpg");
     background-color: #7060ae;
     border: 10px solid #412982;
     border-radius: 1rem;
@@ -836,41 +824,40 @@ footer {
     color: whitesmoke;
     z-index: 11;
     grid-area: book4;
-  }
+}
 
-  .container5 {
+.container5 {
     margin: 300px 0;
     width: 100%;
     height: 150px;
     display: grid;
     gap: 1rem;
     align-content: center;
-    grid-template-columns:
-      [bg5-start text5-start] auto [book5-start] auto [book5-end] auto [text5-end bg5-end];
+    grid-template-columns: [bg5-start text5-start] auto [book5-start] auto [book5-end] auto [text5-end bg5-end];
     grid-template-rows: [book5-start] auto [bg5-start] auto [book5-end] auto [text5-start] 200px [text5-end] auto [bg5-end];
     grid-area: section1;
-  }
-  
-  .shape13 {
+}
+
+.shape13 {
     width: 196px;
     height: 300px;
     border-radius: 1rem;
-    background-image: url('../images/WhatMyBonesKnow.jpg');
+    background-image: url("../images/WhatMyBonesKnow.jpg");
     background-color: #ae608e;
     border: 10px solid #82295d;
     z-index: 10;
     grid-area: book5;
-  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
-  }
-  .shape14 {
+    /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+}
+.shape14 {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
     background-color: #828282;
     z-index: 9;
     grid-area: bg5;
-  }
-  .shape15 {
+}
+.shape15 {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
@@ -880,22 +867,21 @@ footer {
     z-index: 11;
     grid-area: text5;
     overflow: auto;
-  }
+}
 
-  .container6 {
+.container6 {
     margin: 300px 0;
     width: 100%;
     height: 150px;
     display: grid;
     gap: 1rem;
     align-content: center;
-    grid-template-columns:
-      [bg6-start text6-start] auto [book6-start] auto [book6-end] auto [text6-end bg6-end];
+    grid-template-columns: [bg6-start text6-start] auto [book6-start] auto [book6-end] auto [text6-end bg6-end];
     grid-template-rows: [book6-start] auto [bg6-start] auto [book6-end] auto [text6-start] 200px [text6-end] auto [bg6-end];
     grid-area: section2;
-  }
-  
-  .shape16 {
+}
+
+.shape16 {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
@@ -905,20 +891,20 @@ footer {
     z-index: 10;
     grid-area: text6;
     overflow: auto;
-  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
-  }
-  .shape17 {
+    /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+}
+.shape17 {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
     background-color: #828282;
     z-index: 9;
     grid-area: bg6;
-  }
-  .shape18 {
+}
+.shape18 {
     width: 300px;
     height: 300px;
-    background-image: url('../images/BeingWell.jpg');
+    background-image: url("../images/BeingWell.jpg");
     background-color: #7060ae;
     border: 10px solid #412982;
     border-radius: 1rem;
@@ -926,7 +912,7 @@ footer {
     color: whitesmoke;
     z-index: 11;
     grid-area: book6;
-  }
+}
 /* Media Queries */
 /* Nav Menu media query for tablets and larger */
 @media screen and (min-width: 768px) {
@@ -983,19 +969,19 @@ footer {
         margin: 16rem 0 0 0;
     }
 
-    /* Grid stylings for tablet and larger */ 
+    /* Grid stylings for tablet and larger */
 
     .main-container {
         grid-template-columns: repeat(2, 28%);
-        grid-template-areas: 
-            'main1 .'
-            'main2 .'
-            'main3 .'
-            'main4 .'
-            'main5 main6'
-            'main8 main7'
-            'main9 main10'
-            '. main11';
+        grid-template-areas:
+            "main1 ."
+            "main2 ."
+            "main3 ."
+            "main4 ."
+            "main5 main6"
+            "main8 main7"
+            "main9 main10"
+            ". main11";
     }
 
     #main1 {
@@ -1041,33 +1027,30 @@ footer {
     #main11 {
         grid-area: main11;
     }
-    
 
     .container1 {
-      margin-top: 180px;
-      width: 100%;
-      height: 150px;
-      display: grid;
-      gap: 1rem;
-      align-content: center;
-      grid-template-columns:
-        [bg-start] auto [book-start] auto [book-end] auto [text-start] auto [text-end] auto [bg-end];
-      grid-template-rows: [book-start] auto [bg-start] 0.5em [text-start] auto [text-end book-end] auto [bg-end];
-      grid-area: section1;
+        margin-top: 180px;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [bg-start] auto [book-start] auto [book-end] auto [text-start] auto [text-end] auto [bg-end];
+        grid-template-rows: [book-start] auto [bg-start] 0.5em [text-start] auto [text-end book-end] auto [bg-end];
+        grid-area: section1;
     }
 
     .container2 {
-      margin-top: 660px;
-      width: 100%;
-      height: 150px;
-      display: grid;
-      gap: 1rem;
-      align-content: center;
-      grid-template-columns:
-            [bg2-start] auto [text2-start] auto [text2-end] auto [book2-start] auto [book2-end] auto [bg2-end];
-          grid-template-rows: [book2-start] auto [bg2-start] 0.5em [text2-start] auto [text2-end book2-end] auto [bg2-end];
-          grid-area: section2;
-        }
+        margin-top: 660px;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [bg2-start] auto [text2-start] auto [text2-end] auto [book2-start] auto [book2-end] auto [bg2-end];
+        grid-template-rows: [book2-start] auto [bg2-start] 0.5em [text2-start] auto [text2-end book2-end] auto [bg2-end];
+        grid-area: section2;
+    }
 
     .container3 {
         margin-top: 180px;
@@ -1075,127 +1058,122 @@ footer {
         height: 150px;
         display: grid;
         gap: 1rem;
-        align-content: center;            
-        grid-template-columns:
-              [bg3-start] auto [book3-start] auto [book3-end] auto [text3-start] auto [text3-end] auto [bg3-end];
-            grid-template-rows: [book3-start] auto [bg3-start] 0.5em [text3-start] auto [text3-end book3-end] auto [bg3-end];
+        align-content: center;
+        grid-template-columns: [bg3-start] auto [book3-start] auto [book3-end] auto [text3-start] auto [text3-end] auto [bg3-end];
+        grid-template-rows: [book3-start] auto [bg3-start] 0.5em [text3-start] auto [text3-end book3-end] auto [bg3-end];
         grid-area: section3;
-        }
-    
-        container4 {
-            margin-top: 660px;
-            width: 100%;
-            height: 150px;
-            display: grid;
-            gap: 1rem;
-            align-content: center;
-            grid-template-columns:
-                  [bg4-start] auto [text4-start] auto [text4-end] auto [book4-start] auto [book4-end] auto [bg4-end];
-                grid-template-rows: [book4-start] auto [bg4-start] 0.5em [text4-start] auto [text4-end book4-end] auto [bg4-end];
-                grid-area: section4;
-              }
+    }
 
-              .container5 {
-                margin-top: 180px;
-                width: 100%;
-                height: 150px;
-                display: grid;
-                gap: 1rem;
-                align-content: center;            
-                grid-template-columns:
-                      [bg5-start] auto [book5-start] auto [book5-end] auto [text5-start] auto [text5-end] auto [bg5-end];
-                    grid-template-rows: [book5-start] auto [bg5-start] 0.5em [text5-start] auto [text5-end book5-end] auto [bg5-end];
-                grid-area: section5;
-                }
-            
-                container6 {
-                    margin-top: 660px;
-                    width: 100%;
-                    height: 150px;
-                    display: grid;
-                    gap: 1rem;
-                    align-content: center;
-                    grid-template-columns:
-                          [bg6-start] auto [text6-start] auto [text6-end] auto [book6-start] auto [book6-end] auto [bg6-end];
-                        grid-template-rows: [book6-start] auto [bg6-start] 0.5em [text6-start] auto [text6-end book6-end] auto [bg6-end];
-                        grid-area: section6;
-                      }
-  /* Meetups Page for Tablets and Desktop */
+    container4 {
+        margin-top: 660px;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [bg4-start] auto [text4-start] auto [text4-end] auto [book4-start] auto [book4-end] auto [bg4-end];
+        grid-template-rows: [book4-start] auto [bg4-start] 0.5em [text4-start] auto [text4-end book4-end] auto [bg4-end];
+        grid-area: section4;
+    }
 
-  #meetup-info {
-    margin-top: 12em;
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-  }
+    .container5 {
+        margin-top: 180px;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [bg5-start] auto [book5-start] auto [book5-end] auto [text5-start] auto [text5-end] auto [bg5-end];
+        grid-template-rows: [book5-start] auto [bg5-start] 0.5em [text5-start] auto [text5-end book5-end] auto [bg5-end];
+        grid-area: section5;
+    }
 
-  #meetup-form {
-    grid-template-columns: repeat(2, 40%);
-    align-items: start;
-  }
+    container6 {
+        margin-top: 660px;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [bg6-start] auto [text6-start] auto [text6-end] auto [book6-start] auto [book6-end] auto [bg6-end];
+        grid-template-rows: [book6-start] auto [bg6-start] 0.5em [text6-start] auto [text6-end book6-end] auto [bg6-end];
+        grid-area: section6;
+    }
+    /* Meetups Page for Tablets and Desktop */
 
-  #input-blocks {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
+    #meetup-info {
+        margin-top: 12em;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+    }
 
-  #input-map {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
+    #meetup-form {
+        grid-template-columns: repeat(2, 40%);
+        align-items: start;
+    }
 
-  /* Experience Page for tablet and desktop */
-  #backpack1 {
-    top: 340px;
-  }
+    #input-blocks {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
 
-  #backpack2 {
-    top: 190px;
-  }
+    #input-map {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
 
-  #backpack3 {
-    top: 490px;
-  }
+    /* Experience Page for tablet and desktop */
+    #backpack1 {
+        top: 340px;
+    }
 
-#backpack4 {
-    top: 640px;
+    #backpack2 {
+        top: 190px;
+    }
 
-}
+    #backpack3 {
+        top: 490px;
+    }
 
-#suitcase1 {
-    top: 190px;
-}
+    #backpack4 {
+        top: 640px;
+    }
 
-#suitcase2 {
-    top: 340px;
-}
+    #suitcase1 {
+        top: 190px;
+    }
 
-#suitcase3 {
-    top: 490px;
-}
+    #suitcase2 {
+        top: 340px;
+    }
 
-#suitcase4 {
-    top: 640px;
-}
+    #suitcase3 {
+        top: 490px;
+    }
 
-  .baggage2 > p {
-    align-self: flex-end;
-  }
+    #suitcase4 {
+        top: 640px;
+    }
+
+    .baggage2 > p {
+        align-self: flex-end;
+    }
 }
 
 /* Media query for desktop */
 @media screen and (min-width: 992px) {
     .main-container {
         grid-template-columns: repeat(3, 28%);
-        grid-template-areas: 
-            '. main1 .'
-            '. main2 .'
-            '. main3 .'
-            '. main4 .'
-            '. main5 .'
-            'main8 . main6'
-            'main9 . main7'
-            '. main10 .'
-            '. main11 .';
+        grid-template-areas:
+            ". main1 ."
+            ". main2 ."
+            ". main3 ."
+            ". main4 ."
+            ". main5 ."
+            "main8 . main6"
+            "main9 . main7"
+            ". main10 ."
+            ". main11 .";
     }
 
     #main1 {
@@ -1242,90 +1220,84 @@ footer {
         grid-area: main11;
     }
 
-  .container1 {
-    width: 100%;
-    height: 150px;
-    display: grid;
-    gap: 1rem;
-    align-content: center;
-    grid-template-columns:
-      [book-start] 100px [bg-start] auto [book-end] auto [text-start] auto [bg-end] auto [text-end];
-    grid-template-rows: [book-start] auto [text-start] auto [bg-start] auto [text-end] auto [book-end] auto [bg-end];
-    grid-area: section1;
-  }
-  
-  .container2 {
-    margin-top: 1em;
-    width: 100%;
-    height: 150px;
-    display: grid;
-    gap: 1rem;
-    align-content: center;
-    grid-template-columns:
-      [text2-start] 100px [bg2-start] auto [text2-end] auto [book2-start] auto [bg2-end] auto [book2-end];
-    grid-template-rows: [book2-start] auto [text2-start] auto [bg2-start] auto [text2-end] auto [book2-end] auto [bg2-end];
-    grid-area: section2;
-  }
+    .container1 {
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [book-start] 100px [bg-start] auto [book-end] auto [text-start] auto [bg-end] auto [text-end];
+        grid-template-rows: [book-start] auto [text-start] auto [bg-start] auto [text-end] auto [book-end] auto [bg-end];
+        grid-area: section1;
+    }
 
-  .container3 {
-    width: 100%;
-    height: 150px;
-    display: grid;
-    gap: 1rem;
-    align-content: center;
-    grid-template-columns:
-      [book3-start] 100px [bg3-start] auto [book3-end] auto [text3-start] auto [bg3-end] auto [text3-end];
-    grid-template-rows: [book3-start] auto [text3-start] auto [bg3-start] auto [text3-end] auto [book3-end] auto [bg3-end];
-    grid-area: section3;
-  }
-  
-  .container4 {
-    margin-top: 1em;
-    width: 100%;
-    height: 150px;
-    display: grid;
-    gap: 1rem;
-    align-content: center;
-    grid-template-columns:
-      [text4-start] 100px [bg4-start] auto [text4-end] auto [book4-start] auto [bg4-end] auto [book4-end];
-    grid-template-rows: [book4-start] auto [text4-start] auto [bg4-start] auto [text4-end] auto [book4-end] auto [bg4-end];
-    grid-area: section4;
-  }
+    .container2 {
+        margin-top: 1em;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [text2-start] 100px [bg2-start] auto [text2-end] auto [book2-start] auto [bg2-end] auto [book2-end];
+        grid-template-rows: [book2-start] auto [text2-start] auto [bg2-start] auto [text2-end] auto [book2-end] auto [bg2-end];
+        grid-area: section2;
+    }
 
-  .container5 {
-    width: 100%;
-    height: 150px;
-    display: grid;
-    gap: 1rem;
-    align-content: center;
-    grid-template-columns:
-      [book5-start] 100px [bg5-start] auto [book5-end] auto [text5-start] auto [bg5-end] auto [text5-end];
-    grid-template-rows: [book5-start] auto [text5-start] auto [bg5-start] auto [text5-end] auto [book5-end] auto [bg5-end];
-    grid-area: section5;
-  }
-  
-  .container6 {
-    margin-top: 1em;
-    width: 100%;
-    height: 150px;
-    display: grid;
-    gap: 1rem;
-    align-content: center;
-    grid-template-columns:
-      [text6-start] 100px [bg6-start] auto [text6-end] auto [book6-start] auto [bg6-end] auto [book6-end];
-    grid-template-rows: [book6-start] auto [text6-start] auto [bg6-start] auto [text6-end] auto [book6-end] auto [bg6-end];
-    grid-area: section6;
-  }
+    .container3 {
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [book3-start] 100px [bg3-start] auto [book3-end] auto [text3-start] auto [bg3-end] auto [text3-end];
+        grid-template-rows: [book3-start] auto [text3-start] auto [bg3-start] auto [text3-end] auto [book3-end] auto [bg3-end];
+        grid-area: section3;
+    }
 
-  nav {
-    box-shadow: none;
-  }
+    .container4 {
+        margin-top: 1em;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [text4-start] 100px [bg4-start] auto [text4-end] auto [book4-start] auto [bg4-end] auto [book4-end];
+        grid-template-rows: [book4-start] auto [text4-start] auto [bg4-start] auto [text4-end] auto [book4-end] auto [bg4-end];
+        grid-area: section4;
+    }
 
-  #menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    box-shadow: none;
-  }
+    .container5 {
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [book5-start] 100px [bg5-start] auto [book5-end] auto [text5-start] auto [bg5-end] auto [text5-end];
+        grid-template-rows: [book5-start] auto [text5-start] auto [bg5-start] auto [text5-end] auto [book5-end] auto [bg5-end];
+        grid-area: section5;
+    }
+
+    .container6 {
+        margin-top: 1em;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        grid-template-columns: [text6-start] 100px [bg6-start] auto [text6-end] auto [book6-start] auto [bg6-end] auto [book6-end];
+        grid-template-rows: [book6-start] auto [text6-start] auto [bg6-start] auto [text6-end] auto [book6-end] auto [bg6-end];
+        grid-area: section6;
+    }
+
+    nav {
+        box-shadow: none;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        box-shadow: none;
+    }
 }
