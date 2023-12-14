@@ -1172,6 +1172,39 @@ footer {
   }
 
   /* Experience Page for tablet and desktop */
+  #backpack1 {
+    top: 340px;
+  }
+
+  #backpack2 {
+    top: 190px;
+  }
+
+  #backpack3 {
+    top: 490px;
+  }
+
+#backpack4 {
+    top: 640px;
+
+}
+
+#suitcase1 {
+    top: 190px;
+}
+
+#suitcase2 {
+    top: 340px;
+}
+
+#suitcase3 {
+    top: 490px;
+}
+
+#suitcase4 {
+    top: 640px;
+}
+
   .baggage2 > p {
     align-self: flex-end;
   }
