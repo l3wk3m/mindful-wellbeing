@@ -148,7 +148,7 @@ h1 {
 
 #bg-img-home {
     margin-bottom: 2rem;
-    background-image: url('/assets/images/alseep_in_car.jpg');
+    background-image: url('../images/alseep_in_car.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -194,7 +194,7 @@ h1 {
     margin-bottom: 2rem;
     height: 30rem;
     width: 100%;
-    background-image: url('/assets/images/resources.jpg');
+    background-image: url('../images/resources.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -225,7 +225,7 @@ h1 {
     margin-bottom: 2rem;
     height: 30rem;
     width: 100%;
-    background-image: url('/assets/images/hero_image.jpg');
+    background-image: url('../images/hero_image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -257,7 +257,7 @@ h1 {
     margin-bottom: 2rem;
     height: 30rem;
     width: 100%;
-    background-image: url('/assets/images/space.jpg');
+    background-image: url('../images/space.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -346,7 +346,7 @@ h1 {
 }
 
 #backpack1 {
-    background-image: url('/assets/images/backpack_1.png');
+    background-image: url('../images/backpack_1.png');
     position: sticky;
     height: 150px;
     width: 150px;
@@ -357,7 +357,7 @@ h1 {
 }
 
 #backpack2 {
-    background-image: url('/assets/images/backpack_2.png');
+    background-image: url('../images/backpack_2.png');
     position: sticky;
     height: 150px;
     width: 122px;
@@ -367,7 +367,7 @@ h1 {
 }
 
 #backpack3 {
-    background-image: url('/assets/images/backpack_1.png');
+    background-image: url('../images/backpack_1.png');
     position: sticky;
     height: 150px;
     width: 150px;
@@ -377,7 +377,7 @@ h1 {
 }
 
 #backpack4 {
-    background-image: url('/assets/images/backpack_2.png');
+    background-image: url('../images/backpack_2.png');
     position: sticky;
     height: 150px;
     width: 122px;
@@ -387,7 +387,7 @@ h1 {
 }
 
 #suitcase1 {
-    background-image: url('/assets/images/suitcase_1.png');
+    background-image: url('../images/suitcase_1.png');
     position: sticky;
     height: 150px;
     width: 141px;
@@ -398,7 +398,7 @@ h1 {
 }
 
 #suitcase2 {
-    background-image: url('/assets/images/suitcase_2.png');
+    background-image: url('../images/suitcase_2.png');
     position: sticky;
     height: 150px;
     width: 114px;
@@ -408,7 +408,7 @@ h1 {
 }
 
 #suitcase3 {
-    background-image: url('/assets/images/suitcase_1.png');
+    background-image: url('../images/suitcase_1.png');
     position: sticky;
     height: 150px;
     width: 141px;
@@ -418,7 +418,7 @@ h1 {
 }
 
 #suitcase4 {
-    background-image: url('/assets/images/suitcase_2.png');
+    background-image: url('../images/suitcase_2.png');
     position: sticky;
     height: 150px;
     width: 114px;
@@ -754,7 +754,7 @@ footer {
   width: 200px;
   height: 300px;
   border-radius: 1rem;
-  background-image: url('/assets/images/NonviolentCommunication.jpg');
+  background-image: url('../images/NonviolentCommunication.jpg');
   background-color: #ae608e;
   border: 10px solid #82295d;
   z-index: 10;
@@ -817,7 +817,7 @@ footer {
 .shape6 {
   width: 185px;
   height: 300px;
-  background-image: url('/assets/images/HoldMeTight.jpg');
+  background-image: url('../images/HoldMeTight.jpg');
   background-color: #7060ae;
   border: 10px solid #412982;
   border-radius: 1rem;
@@ -844,7 +844,7 @@ footer {
     width: 200px;
     height: 300px;
     border-radius: 1rem;
-    background-image: url('/assets/images/NoBadParts.jpg');
+    background-image: url('../images/NoBadParts.jpg');
     background-color: #ae608e;
     border: 10px solid #82295d;
     z-index: 10;
@@ -907,7 +907,7 @@ footer {
   .shape12 {
     width: 187px;
     height: 300px;
-    background-image: url('/assets/images/Resilient.jpg');
+    background-image: url('../images/Resilient.jpg');
     background-color: #7060ae;
     border: 10px solid #412982;
     border-radius: 1rem;
@@ -934,7 +934,7 @@ footer {
     width: 196px;
     height: 300px;
     border-radius: 1rem;
-    background-image: url('/assets/images/WhatMyBonesKnow.jpg');
+    background-image: url('../images/WhatMyBonesKnow.jpg');
     background-color: #ae608e;
     border: 10px solid #82295d;
     z-index: 10;
@@ -997,7 +997,7 @@ footer {
   .shape18 {
     width: 300px;
     height: 300px;
-    background-image: url('/assets/images/BeingWell.jpg');
+    background-image: url('../images/BeingWell.jpg');
     background-color: #7060ae;
     border: 10px solid #412982;
     border-radius: 1rem;
