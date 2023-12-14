@@ -689,10 +689,9 @@ footer {
 
 }
 .container1 {
-  margin: 150px 0;
+  margin: 300px 0;
   width: 100%;
   height: 150px;
-  border: 1px solid #3a3a3a;
   display: grid;
   gap: 1rem;
   align-content: center;
@@ -703,7 +702,7 @@ footer {
 }
 
 .shape1 {
-  width: 150px;
+  width: 200px;
   height: 300px;
   border-radius: 1rem;
   background-image: url('/assets/images/NonviolentCommunication.jpg');
@@ -717,17 +716,15 @@ footer {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  background-color: #60aea0;
-  border: 10px solid #298250;
+  background-color: #828282;
   z-index: 9;
   grid-area: bg;
 }
 .shape3 {
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
-  background-color: #6560ae;
-  border: 10px solid #382982;
+  border-radius: 0.5rem;
+  background-color: #ae608e;
   color: whitesmoke;
   z-index: 11;
   grid-area: text;
@@ -735,10 +732,9 @@ footer {
 }
 
 .container2 {
-  margin: 150px 0;
+  margin: 300px 0;
   width: 100%;
   height: 150px;
-  border: 1px solid #3a3a3a;
   display: grid;
   gap: 1rem;
   align-content: center;
@@ -751,9 +747,10 @@ footer {
 .shape4 {
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
-  background-color: #ae608e;
-  border: 10px solid #82295d;
+  border-radius: 0.5rem;
+  background-color: #7060ae;
+  text-align: center;
+  color: whitesmoke;
   z-index: 10;
   grid-area: text2;
   overflow: auto;
@@ -763,20 +760,200 @@ footer {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  background-color: #60aea0;
-  border: 10px solid #298250;
+  background-color: #828282;
   z-index: 9;
   grid-area: bg2;
 }
 .shape6 {
-  width: 148px;
-  height: 241px;
-  background-image: url('/assets/images/HoldMeTight.jpeg');
+  width: 185px;
+  height: 300px;
+  background-image: url('/assets/images/HoldMeTight.jpg');
+  background-color: #7060ae;
+  border: 10px solid #412982;
+  border-radius: 1rem;
   background-repeat: no-repeat;
   color: whitesmoke;
   z-index: 11;
   grid-area: book2;
 }
+
+.container3 {
+    margin: 300px 0;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [bg3-start text-start] auto [book3-start] auto [book3-end] auto [text3-end bg3-end];
+    grid-template-rows: [book3-start] auto [bg3-start] auto [book3-end] auto [text3-start] 200px [text3-end] auto [bg3-end];
+    grid-area: section1;
+  }
+  
+  .shape7 {
+    width: 200px;
+    height: 300px;
+    border-radius: 1rem;
+    background-image: url('/assets/images/NoBadParts.jpg');
+    background-color: #ae608e;
+    border: 10px solid #82295d;
+    z-index: 10;
+    grid-area: book3;
+  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+  }
+  .shape8 {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #828282;
+    z-index: 9;
+    grid-area: bg3;
+  }
+  .shape9 {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #ae608e;
+    color: whitesmoke;
+    z-index: 11;
+    grid-area: text3;
+    overflow: auto;
+  }
+
+  .container4 {
+    margin: 300px 0;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [bg4-start text4-start] auto [book4-start] auto [book4-end] auto [text4-end bg4-end];
+    grid-template-rows: [book4-start] auto [bg4-start] auto [book4-end] auto [text4-start] 200px [text4-end] auto [bg4-end];
+    grid-area: section2;
+  }
+  
+  .shape10 {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #7060ae;
+    text-align: center;
+    color: whitesmoke;
+    z-index: 10;
+    grid-area: text4;
+    overflow: auto;
+  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+  }
+  .shape11 {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #828282;
+    z-index: 9;
+    grid-area: bg4;
+  }
+  .shape12 {
+    width: 187px;
+    height: 300px;
+    background-image: url('/assets/images/Resilient.jpg');
+    background-color: #7060ae;
+    border: 10px solid #412982;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    z-index: 11;
+    grid-area: book4;
+  }
+
+  .container5 {
+    margin: 300px 0;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [bg5-start text5-start] auto [book5-start] auto [book5-end] auto [text5-end bg5-end];
+    grid-template-rows: [book5-start] auto [bg5-start] auto [book5-end] auto [text5-start] 200px [text5-end] auto [bg5-end];
+    grid-area: section1;
+  }
+  
+  .shape13 {
+    width: 196px;
+    height: 300px;
+    border-radius: 1rem;
+    background-image: url('/assets/images/WhatMyBonesKnow.jpg');
+    background-color: #ae608e;
+    border: 10px solid #82295d;
+    z-index: 10;
+    grid-area: book5;
+  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+  }
+  .shape14 {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #828282;
+    z-index: 9;
+    grid-area: bg5;
+  }
+  .shape15 {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #ae608e;
+    color: whitesmoke;
+    z-index: 11;
+    grid-area: text5;
+    overflow: auto;
+  }
+
+  .container6 {
+    margin: 300px 0;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [bg6-start text6-start] auto [book6-start] auto [book6-end] auto [text6-end bg6-end];
+    grid-template-rows: [book6-start] auto [bg6-start] auto [book6-end] auto [text6-start] 200px [text6-end] auto [bg6-end];
+    grid-area: section2;
+  }
+  
+  .shape16 {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #7060ae;
+    text-align: center;
+    color: whitesmoke;
+    z-index: 10;
+    grid-area: text6;
+    overflow: auto;
+  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
+  }
+  .shape17 {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #828282;
+    z-index: 9;
+    grid-area: bg6;
+  }
+  .shape18 {
+    width: 300px;
+    height: 300px;
+    background-image: url('/assets/images/BeingWell.jpg');
+    background-color: #7060ae;
+    border: 10px solid #412982;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    z-index: 11;
+    grid-area: book6;
+  }
 /* Media Queries */
 /* Nav Menu media query for tablets and larger */
 @media screen and (min-width: 768px) {
