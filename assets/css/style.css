@@ -289,6 +289,14 @@ h1 {
     grid-template-columns: repeat(2, 40%);
     grid-template-areas: 
         '. et9';
+    margin: 5rem 0;
+}
+
+.baggage2 > p {
+    justify-self: end;
+    font-family: 'Pacifico', Courier, monospace;
+    grid-area: et9;
+    font-size: 280%;
 }
 
 #backpack1 {
@@ -413,11 +421,6 @@ h1 {
     grid-area: et8;
 }
 
-#experience_text_9 {
-    grid-area: et9;
-    justify-self: end;
-    font-family: 'Pacifico', Courier, monospace;
-}
 /* Commenting out the below grid approach to try and simplify the whole contents of the page into one grid for mobile devices, which will be reorganised for tablets and desktop in a later media query */
 
 
