@@ -35,6 +35,10 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
+span {
+    font-family: 'Pacifico', Courier, monospace;
+}
+
 header > a {
     padding-top: 2rem;
     padding-left: 2rem;
@@ -95,7 +99,6 @@ a {
 main {
     padding: 0;
     flex: 1 0 auto;
-    margin-top: 10rem;
     margin-bottom: 5rem;
 }
 
@@ -130,18 +133,19 @@ h1 {
 
 /* Landing section for home page */
 
-#main-landing {
+#home-landing {
     width: 100%;
-    background-color: #298250;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    border: solid 1px black;
+    display: flex;
 }
 
 #bg-img-home {
     margin-bottom: 2rem;
-    height: 400px;
+    background-image: url('/assets/images/alseep_in_car.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 30rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -150,13 +154,21 @@ h1 {
 }
 
 #landing-text-home {
-    background-color: #298250;
+    background-color: #262626;
+    border-radius: 1rem;
     text-align: center;
     border: 1px solid #262626;
     height: 8rem;
     width: 8rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing-text-home > h2 {
+    font-family: 'Satisfy', Courier, monospace;
 }
 
 /* Resources section for home page */
@@ -258,31 +270,40 @@ h1 {
     justify-content: center;
 }
 
+.main-container h2 {
+    text-align: center;
+}
+
+.main-container p {
+    text-align: center;
+}
+
 .baggage1 {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: 4rem 20% 20% 4rem;
     grid-template-rows: repeat(20, 150px);
+    gap: 1rem;
     grid-template-areas: 
-        '. .'
-        'backpack2 .'
-        '. et1'
-        '. suitcase1'
-        'et2 .'
-        'suitcase2 .'
-        '. et3'
-        '. backpack1'
-        'et4 .'
-        'backpack3 .'
-        '. et5'
-        '. suitcase3'
-        'et6 .'
-        'suitcase4 .'
-        '. et7'
-        '. backpack4'
-        '. .'
-        'et8 .'
-        '. .';
+        '. . . .'
+        '. backpack2 . .'
+        '. . . et1'
+        '. . suitcase1 .'
+        'et2 . . .'
+        '. suitcase2 . .'
+        '. . . et3'
+        '. . backpack1 .'
+        'et4 . . .'
+        '. backpack3 . .'
+        '. . . et5'
+        '. . suitcase3 .'
+        'et6 . . .'
+        '. suitcase4 . .'
+        '. . . et7'
+        '. . backpack4 .'
+        '. . . .'
+        'et8 . . .'
+        '. . . .';
 }
 
 .baggage2 {
