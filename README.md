@@ -73,6 +73,8 @@ Both caught minor bugs but once addressed they passed this validation with flyin
 
 ![W3CSS](/workspaces/mindful-wellbeing/assets/images/w3css.png)
 
+Finally the form was tested and submitted on all platforms.
+
 **Bug Fixing**
 
 My *Experience* page wasn't working for the longest time. Eventually I'd noticed that an overflow-x value that was killing the position: sticky; CSS that was creating the effect. I had initially put that in there to handle the display for mobile devices, but now that I had an improved grid layout handling that and the overflow value was redundant. Removing fixed the code instantly.
