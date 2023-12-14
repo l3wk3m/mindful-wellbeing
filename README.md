@@ -9,8 +9,7 @@ For these kind of users, this website should impart a sense of calm that tick th
 
 To this end I had move from my initial design ideas of using multiple muted colours, as pictured in my original wireframe below
 
-![original wirefram](assets/images/original wireframe.png)
-*********
+![original wireframe](file:///workspaces/mindful-wellbeing/assets/images/original%20wireframe.png)
 
 
 To a completely monochromatic look.
