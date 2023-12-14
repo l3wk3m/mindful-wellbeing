@@ -786,7 +786,7 @@ footer {
     gap: 1rem;
     align-content: center;
     grid-template-columns:
-      [bg3-start text-start] auto [book3-start] auto [book3-end] auto [text3-end bg3-end];
+      [bg3-start text3-start] auto [book3-start] auto [book3-end] auto [text3-end bg3-end];
     grid-template-rows: [book3-start] auto [bg3-start] auto [book3-end] auto [text3-start] 200px [text3-end] auto [bg3-end];
     grid-area: section1;
   }
