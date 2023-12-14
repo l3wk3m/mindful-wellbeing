@@ -725,6 +725,7 @@ footer {
   height: 100%;
   border-radius: 0.5rem;
   background-color: #ae608e;
+  text-align: center;
   color: whitesmoke;
   z-index: 11;
   grid-area: text;
@@ -814,6 +815,7 @@ footer {
     height: 100%;
     border-radius: 0.5rem;
     background-color: #ae608e;
+    text-align: center;
     color: whitesmoke;
     z-index: 11;
     grid-area: text3;
@@ -903,6 +905,7 @@ footer {
     height: 100%;
     border-radius: 0.5rem;
     background-color: #ae608e;
+    text-align: center;
     color: whitesmoke;
     z-index: 11;
     grid-area: text5;
@@ -1042,8 +1045,91 @@ footer {
       grid-template-columns:
             [bg2-start] auto [text2-start] auto [text2-end] auto [book2-start] auto [book2-end] auto [bg2-end];
           grid-template-rows: [book2-start] auto [bg2-start] 0.5em [text2-start] auto [text2-end book2-end] auto [bg2-end];
-          grid-area: section1;
+          grid-area: section2;
         }
+
+    .container3 {
+        margin-top: 180px;
+        width: 100%;
+        height: 150px;
+        border: 1px solid #3a3a3a;
+        display: grid;
+        gap: 1rem;
+        align-content: center;            
+        grid-template-columns:
+              [bg3-start] auto [book3-start] auto [book3-end] auto [text3-start] auto [text3-end] auto [bg3-end];
+            grid-template-rows: [book3-start] auto [bg3-start] 0.5em [text3-start] auto [text3-end book3-end] auto [bg3-end];
+        grid-area: section3;
+        }
+    
+        container4 {
+            margin-top: 660px;
+            width: 100%;
+            height: 150px;
+            border: 1px solid #3a3a3a;
+            display: grid;
+            gap: 1rem;
+            align-content: center;
+            grid-template-columns:
+                  [bg4-start] auto [text4-start] auto [text4-end] auto [book4-start] auto [book4-end] auto [bg4-end];
+                grid-template-rows: [book4-start] auto [bg4-start] 0.5em [text4-start] auto [text4-end book4-end] auto [bg4-end];
+                grid-area: section4;
+              }
+    .container3 {
+        margin-top: 180px;
+        width: 100%;
+        height: 150px;
+        border: 1px solid #3a3a3a;
+        display: grid;
+        gap: 1rem;
+        align-content: center;            
+        grid-template-columns:
+              [bg3-start] auto [book3-start] auto [book3-end] auto [text3-start] auto [text3-end] auto [bg3-end];
+            grid-template-rows: [book3-start] auto [bg3-start] 0.5em [text3-start] auto [text3-end book3-end] auto [bg3-end];
+        grid-area: section3;
+        }
+    
+        container4 {
+            margin-top: 660px;
+            width: 100%;
+            height: 150px;
+            border: 1px solid #3a3a3a;
+            display: grid;
+            gap: 1rem;
+            align-content: center;
+            grid-template-columns:
+                  [bg4-start] auto [text4-start] auto [text4-end] auto [book4-start] auto [book4-end] auto [bg4-end];
+                grid-template-rows: [book4-start] auto [bg4-start] 0.5em [text4-start] auto [text4-end book4-end] auto [bg4-end];
+                grid-area: section4;
+              }
+
+              .container5 {
+                margin-top: 180px;
+                width: 100%;
+                height: 150px;
+                border: 1px solid #3a3a3a;
+                display: grid;
+                gap: 1rem;
+                align-content: center;            
+                grid-template-columns:
+                      [bg5-start] auto [book5-start] auto [book5-end] auto [text5-start] auto [text5-end] auto [bg5-end];
+                    grid-template-rows: [book5-start] auto [bg5-start] 0.5em [text5-start] auto [text5-end book5-end] auto [bg5-end];
+                grid-area: section5;
+                }
+            
+                container6 {
+                    margin-top: 660px;
+                    width: 100%;
+                    height: 150px;
+                    border: 1px solid #3a3a3a;
+                    display: grid;
+                    gap: 1rem;
+                    align-content: center;
+                    grid-template-columns:
+                          [bg6-start] auto [text6-start] auto [text6-end] auto [book6-start] auto [book6-end] auto [bg6-end];
+                        grid-template-rows: [book6-start] auto [bg6-start] 0.5em [text6-start] auto [text6-end book6-end] auto [bg6-end];
+                        grid-area: section6;
+                      }
   /* Meetups Page for Tablets and Desktop */
 
   #meetup-info {
@@ -1100,6 +1186,60 @@ footer {
       [text2-start] 100px [bg2-start] auto [text2-end] auto [book2-start] auto [bg2-end] auto [book2-end];
     grid-template-rows: [book2-start] auto [text2-start] auto [bg2-start] auto [text2-end] auto [book2-end] auto [bg2-end];
     grid-area: section2;
+  }
+
+  .container3 {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #3a3a3a;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [book3-start] 100px [bg3-start] auto [book3-end] auto [text3-start] auto [bg3-end] auto [text3-end];
+    grid-template-rows: [book3-start] auto [text3-start] auto [bg3-start] auto [text3-end] auto [book3-end] auto [bg3-end];
+    grid-area: section3;
+  }
+  
+  .container4 {
+    margin-top: 1em;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #3a3a3a;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [text4-start] 100px [bg4-start] auto [text4-end] auto [book4-start] auto [bg4-end] auto [book4-end];
+    grid-template-rows: [book4-start] auto [text4-start] auto [bg4-start] auto [text4-end] auto [book4-end] auto [bg4-end];
+    grid-area: section4;
+  }
+
+  .container5 {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #3a3a3a;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [book5-start] 100px [bg5-start] auto [book5-end] auto [text5-start] auto [bg5-end] auto [text5-end];
+    grid-template-rows: [book5-start] auto [text5-start] auto [bg5-start] auto [text5-end] auto [book5-end] auto [bg5-end];
+    grid-area: section5;
+  }
+  
+  .container6 {
+    margin-top: 1em;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #3a3a3a;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns:
+      [text6-start] 100px [bg6-start] auto [text6-end] auto [book6-start] auto [bg6-end] auto [book6-end];
+    grid-template-rows: [book6-start] auto [text6-start] auto [bg6-start] auto [text6-end] auto [book6-end] auto [bg6-end];
+    grid-area: section6;
   }
 
   nav {
