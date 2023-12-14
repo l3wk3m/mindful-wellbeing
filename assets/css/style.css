@@ -177,11 +177,17 @@ h1 {
     width: 100%;
 }
 
+#resources-list h2 {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
 #bg-img-resources {
     margin-bottom: 2rem;
-    height: 12rem;
+    height: 30rem;
     width: 100%;
-    background-color: gold;
+    background-image: url('/assets/images/resources.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -209,7 +215,7 @@ h1 {
 
 #bg-img-meetups {
     margin-bottom: 2rem;
-    height: 12rem;
+    height: 30rem;
     width: 100%;
     background-image: url('/assets/images/hero_image.jpg');
     background-repeat: no-repeat;
@@ -241,12 +247,13 @@ h1 {
 
 #bg-img-experience {
     margin-bottom: 2rem;
-    height: 12rem;
+    height: 30rem;
     width: 100%;
-    background-color: gold;
+    background-image: url('/assets/images/space.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -1024,7 +1031,6 @@ footer {
       margin-top: 180px;
       width: 100%;
       height: 150px;
-      border: 1px solid #3a3a3a;
       display: grid;
       gap: 1rem;
       align-content: center;
@@ -1038,7 +1044,6 @@ footer {
       margin-top: 660px;
       width: 100%;
       height: 150px;
-      border: 1px solid #3a3a3a;
       display: grid;
       gap: 1rem;
       align-content: center;
@@ -1052,7 +1057,6 @@ footer {
         margin-top: 180px;
         width: 100%;
         height: 150px;
-        border: 1px solid #3a3a3a;
         display: grid;
         gap: 1rem;
         align-content: center;            
@@ -1066,34 +1070,6 @@ footer {
             margin-top: 660px;
             width: 100%;
             height: 150px;
-            border: 1px solid #3a3a3a;
-            display: grid;
-            gap: 1rem;
-            align-content: center;
-            grid-template-columns:
-                  [bg4-start] auto [text4-start] auto [text4-end] auto [book4-start] auto [book4-end] auto [bg4-end];
-                grid-template-rows: [book4-start] auto [bg4-start] 0.5em [text4-start] auto [text4-end book4-end] auto [bg4-end];
-                grid-area: section4;
-              }
-    .container3 {
-        margin-top: 180px;
-        width: 100%;
-        height: 150px;
-        border: 1px solid #3a3a3a;
-        display: grid;
-        gap: 1rem;
-        align-content: center;            
-        grid-template-columns:
-              [bg3-start] auto [book3-start] auto [book3-end] auto [text3-start] auto [text3-end] auto [bg3-end];
-            grid-template-rows: [book3-start] auto [bg3-start] 0.5em [text3-start] auto [text3-end book3-end] auto [bg3-end];
-        grid-area: section3;
-        }
-    
-        container4 {
-            margin-top: 660px;
-            width: 100%;
-            height: 150px;
-            border: 1px solid #3a3a3a;
             display: grid;
             gap: 1rem;
             align-content: center;
@@ -1107,7 +1083,6 @@ footer {
                 margin-top: 180px;
                 width: 100%;
                 height: 150px;
-                border: 1px solid #3a3a3a;
                 display: grid;
                 gap: 1rem;
                 align-content: center;            
@@ -1121,7 +1096,6 @@ footer {
                     margin-top: 660px;
                     width: 100%;
                     height: 150px;
-                    border: 1px solid #3a3a3a;
                     display: grid;
                     gap: 1rem;
                     align-content: center;
@@ -1164,7 +1138,6 @@ footer {
   .container1 {
     width: 100%;
     height: 150px;
-    border: 1px solid #3a3a3a;
     display: grid;
     gap: 1rem;
     align-content: center;
@@ -1178,7 +1151,6 @@ footer {
     margin-top: 1em;
     width: 100%;
     height: 150px;
-    border: 1px solid #3a3a3a;
     display: grid;
     gap: 1rem;
     align-content: center;
@@ -1191,7 +1163,6 @@ footer {
   .container3 {
     width: 100%;
     height: 150px;
-    border: 1px solid #3a3a3a;
     display: grid;
     gap: 1rem;
     align-content: center;
@@ -1205,7 +1176,6 @@ footer {
     margin-top: 1em;
     width: 100%;
     height: 150px;
-    border: 1px solid #3a3a3a;
     display: grid;
     gap: 1rem;
     align-content: center;
@@ -1218,7 +1188,6 @@ footer {
   .container5 {
     width: 100%;
     height: 150px;
-    border: 1px solid #3a3a3a;
     display: grid;
     gap: 1rem;
     align-content: center;
@@ -1232,7 +1201,6 @@ footer {
     margin-top: 1em;
     width: 100%;
     height: 150px;
-    border: 1px solid #3a3a3a;
     display: grid;
     gap: 1rem;
     align-content: center;
