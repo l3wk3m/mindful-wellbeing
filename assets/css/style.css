@@ -1168,7 +1168,7 @@ footer {
 }
 
 /* Media query for desktop */
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 992px) {
   .container1 {
     width: 100%;
     height: 150px;
