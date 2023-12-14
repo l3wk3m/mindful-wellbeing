@@ -1,7 +1,7 @@
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Pacifico&family=Satisfy&family=Sintony:wght@400;700&display=swap');
 
-/* Title will be Pacifica. Main text will be Caveat... */
+/* Title will be Pacifico. Main text will be Caveat... */
 
 * {
    padding: 0;
@@ -129,7 +129,6 @@ nav {
     background-color: whitesmoke;
     box-shadow: 0 2px 2px #3a3a3a;
     width: 100%;
-    /* Top property makes sure dropdown menu always appears below page title */
     top: 100%;
 }
 
@@ -331,9 +330,6 @@ h1 {
         '. . . .'
         'et8 . . .'
         '. . . .';
-    /* Commenting out the overflow-x value to see if this will solve the problem I'm having losing the 'sticky' position property
-    overflow-x: hidden;
-    */
 }
 
 .baggage2 {
@@ -532,30 +528,7 @@ h1 {
     justify-self: center;
 }
 
-/* Commenting out the below grid approach to try and simplify the whole contents of the page into one grid for mobile devices, which will be reorganised for tablets and desktop in a later media query */
 
-
-/* Trying a grid approach to the test content on index.html */
-/*
-.main-container-1 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns:
-    [img-left-start] 1fr [img-left-end] 1em [text-left-start] 1fr [text-left-end];
-  grid-template-rows: [img-left-start text-left-start] 1fr [img-left-end text-left-end];
-}
-
-.main-container-2 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns:
-    [text-right-start] 1fr [text-right-end] 1em [img-right-start] 1fr [img-right-end];
-  grid-template-rows:
-    [img-right-start text-right-start] 1fr [img-right-end text-right-end];
-}
-*/
 #first-div-index {
     margin-top: 12em;
 }
@@ -617,7 +590,6 @@ h1 {
 table {
   width: 80%;
   height: 80%;
-  /* Add styling to the table border */
 }
 
 tr {
@@ -680,64 +652,6 @@ footer {
 
 /* Containers for testing the layout of the Resources page */
 
-/* Temporarily disabling to try a different grid approach...
-.container {
-    width: 100%;
-    height: 150px;
-    border: 1px solid #3a3a3a;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.book-image {
-  width: 100px;
-  height: 200px;
-  background-color: black;
-  z-index: 11;
-  grid-column: 2/4;
-  grid-row: 1/4;
-}
-
-.shape1 {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    background-color: #ae608e;
-    border: 10px solid #82295d;
-    z-index: 8;
-  /* Adjusted the widths to % to test out how they react to grid columns and now experimenting with the grid-column feature to push the layout */
-/*
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-.shape2 {
-    width: 100%px;
-    height: 100%;
-    border-radius: 1rem;
-    background-color: #60aea0;
-    border: 10px solid #298250;
-    z-index: 9;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 6;
-}
-.shape3 {
-    width: 100%p;
-    height: 100%;
-    border-radius: 1rem;
-    background-color: #6560ae;
-    border: 10px solid #382982;
-    z-index: 11;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 7;
-}
-*/
 #resources-list {
   top: 5rem;
   display: flex;
@@ -1415,4 +1329,3 @@ footer {
     box-shadow: none;
   }
 }
-
