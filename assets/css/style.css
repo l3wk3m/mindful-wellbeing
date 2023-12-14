@@ -330,7 +330,7 @@ h1 {
     top: 420px;
     border: solid 1px black;
     grid-area: backpack3;
-    justify-self: center;
+    justify-self: end;
 }
 
 #backpack4 {
@@ -364,7 +364,7 @@ h1 {
     top: 270px;
     border: solid 1px black;
     grid-area: suitcase2;
-    justify-self: start;
+    justify-self: center;
 }
 
 #suitcase3 {
@@ -389,36 +389,76 @@ h1 {
     justify-self: center;
 }
 
-#experience_text_1 {
+#experience-text-1 {
     grid-area: et1;
 }
 
-#experience_text_2 {
+#experience-text-1 > p {
+    font-size: 175%;
+    text-align: center;
+}
+
+#experience-text-2 {
     grid-area: et2;
 }
 
-#experience_text_3 {
+#experience-text-2 > p {
+    font-size: 175%;
+    text-align: center;
+}
+
+#experience-text-3 {
     grid-area: et3;
 }
 
-#experience_text_4 {
+#experience-text-3 > p {
+    font-size: 175%;
+    text-align: center;
+}
+
+#experience-text-4 {
     grid-area: et4;
 }
 
-#experience_text_5 {
+#experience-text-4 > p {
+    font-size: 175%;
+    text-align: center;
+}
+
+#experience-text-5 {
     grid-area: et5;
 }
 
-#experience_text_6 {
+#experience-text-5 > p {
+    font-size: 175%;
+    text-align: center;
+}
+
+#experience-text-6 {
     grid-area: et6;
 }
 
-#experience_text_7 {
+#experience-text-6 > p {
+    font-size: 175%;
+    text-align: center;
+}
+
+#experience-text-7 {
     grid-area: et7;
 }
 
-#experience_text_8 {
+#experience-text-7 > p {
+    font-size: 175%;
+    text-align: center;
+}
+
+#experience-text-8 {
     grid-area: et8;
+}
+
+#experience-text-8 > p {
+    font-size: 175%;
+    text-align: center;
 }
 
 /* Commenting out the below grid approach to try and simplify the whole contents of the page into one grid for mobile devices, which will be reorganised for tablets and desktop in a later media query */
