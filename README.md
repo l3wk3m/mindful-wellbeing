@@ -1,110 +1,76 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+**README**
+*Behind*
 
-Welcome USER_NAME,
+**Behind** will act as a resource hub for content focused around the topics of Mindfulness and Wellbeing. The website will aim to give the user a peacefully themed and designed series of webpages that are easy to navigate, within which they will find resources, a website author’s blog and a hub for indicating interest of upcoming in-person meetups.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The core audience for the website will be people who have taken on their own sort of personal journey regarding mindfulness and wellbeing. These are people who have begun to tackle their own material, either through a process with a therapist or through doing their own research into topic that are relevant to them.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+For these kind of users, this website should impart a sense of calm that tick the boxes of interactivity and responsiveness, so the person using the website feels like they have been seen and that their needs have been recognised.
 
-## Gitpod Reminders
+To this end I had move from my initial design ideas of using multiple muted colours, as pictured in my original wireframe below
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![original wirefram](assets/images/original wireframe.png)
+*********
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+To a completely monochromatic look.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Using various shades of grey was the most visually appealing approach for ensuring the user’s experience was one that favoured minimalism and peacefulness.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+In a sentence, the basic design philosophy of the website involves each landing page gently greeting the user with an image and a piece of landing text. The image will cover the width of the screen and will feature the small text snippet within it in a desktop view.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+From the landing page of index.html, the user is encouraged to interact with the ‘Experience page’.
 
-To log into the Heroku toolbelt CLI:
+The purpose of the experience page is to have the user scroll down the page. The grid layout along side the position: sticky; and top: __px; attribute will ensure that small pieces of vector art of baggage are collected along the way. Eventually the user is encouraged to leave their baggage ‘Behind’ as it disappears off the top of the screen and they are presented with a number of links to take them wherever they please on the website once their interest has been piqued by this hook.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 20 2023:** Update Python version to 3.9.17.
+**HOME PAGE**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+*****
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Here the first thing the user will encounter is the nav bar. This is fixed to the top of the page so the user will at all points have a portal for hopping from page to page. The design of the drop-down menu for smartphone displays was taken and adapted from the Love Running Project, though that will be credited in much greater detail at the end of this ReadMe.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The Home Page will then welcome the user to the project, giving them an up front short summary of what they can expect when navigating Mindful Wellbeing.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+It’s important here that the user isn’t overwhelmed with text and information. The snippets of text were written to be just that - short succinct text blocks offset from one another to guide the user down the landing page of the website.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Although the various pages are always available to the user via the navbar, I felt it appropriate that links also be given at the end of the home page so the user could have a coherent experience of the user experience starting on the home page and then gravitating in whichever direction they find most appealing.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**RESOURCES PAGE**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+*****
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+This is the most content-heavy section of the website. The user is expected to visit this page the most, which is why it has second billing to the Home page and is of equal importance in the site’s hierarchy as the ‘Experience’ page.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Like the other page, there will be a landing section - a piece of text and an image welcoming the user to the page and briefly describing what can be found here.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Beneath that I’ve created a bespoke layout within which the user will find 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+**MEETUPS PAGE**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+****
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Here the user will be offered a choice of upcoming meetups they can partake in. To signal their interest they need to fill out a number of required fields, and let us know which session they will be attending from a prepopulated datalist of upcoming available dates.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+**TESTING**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+The website was tested on Chrome, Firefox and Safari.
 
-**How will this affect me?**
+It was also passed through W3 HTML Validator and the W3 CSS Validator.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Both caught minor bugs but once addressed they passed this validation with flying colours
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+**Bug Fixing**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+My *Experience* page wasn't working for the longest time. Eventually I'd noticed that an overflow-x value
