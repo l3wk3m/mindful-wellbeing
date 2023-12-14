@@ -136,9 +136,9 @@ h1 {
 
 #bg-img-home {
     margin-bottom: 2rem;
-    height: 12rem;
+    height: 400px;
     width: 100%;
-    background-color: gold;
+    background-image: url("/assets/images/hero_image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
