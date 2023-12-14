@@ -53,7 +53,7 @@ Beneath that I’ve created a bespoke layout within which the user will find
 
 **MEETUPS PAGE**
 
-
+![Meetups Mobile](file:///workspaces/mindful-wellbeing/assets/images/meetup-mobile.png)
 ****
 
 Here the user will be offered a choice of upcoming meetups they can partake in. To signal their interest they need to fill out a number of required fields, and let us know which session they will be attending from a prepopulated datalist of upcoming available dates.
@@ -68,8 +68,8 @@ It was also passed through W3 HTML Validator and the W3 CSS Validator.
 
 Both caught minor bugs but once addressed they passed this validation with flying colours
 
-
+![W3CSS](file:///workspaces/mindful-wellbeing/assets/images/w3css.png)
 
 **Bug Fixing**
 
-My *Experience* page wasn't working for the longest time. Eventually I'd noticed that an overflow-x value
+My *Experience* page wasn't working for the longest time. Eventually I'd noticed that an overflow-x value that was killing the position: sticky; CSS that was creating the effect. I had initially put that in there to handle the display for mobile devices, but now that I had an improved grid layout handling that and the overflow value was redundant. Removing fixed the code instantly.
