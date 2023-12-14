@@ -326,7 +326,9 @@ h1 {
         '. . . .'
         'et8 . . .'
         '. . . .';
+    /* Commenting out the overflow-x value to see if this will solve the problem I'm having losing the 'sticky' position property
     overflow-x: hidden;
+    */
 }
 
 .baggage2 {
