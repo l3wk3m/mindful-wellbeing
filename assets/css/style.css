@@ -256,15 +256,168 @@ h1 {
     justify-content: center;
 }
 
-.backpack1{
+.baggage1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(20, 150px);
+    grid-template-areas: 
+        '. .'
+        'backpack2 .'
+        '. et1'
+        '. suitcase1'
+        'et2 .'
+        'suitcase2 .'
+        '. et3'
+        '. backpack1'
+        'et4 .'
+        'backpack3 .'
+        '. et5'
+        '. suitcase3'
+        'et6 .'
+        'suitcase4 .'
+        '. et7'
+        '. backpack4'
+        '. .'
+        'et8 .'
+        '. .';
+}
+
+.baggage2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-areas: 
+        '. et9';
+}
+
+#backpack1 {
     background-image: url('/assets/images/backpack_1.png');
     position: sticky;
     height: 150px;
     width: 150px;
-    top: 120px;
+    /* Set top to 270px so it will stick onto the image above which has a height of 150px and a top of 120px - 150 + 120 = 270 */
+    top: 270px;
     border: solid 1px black;
+    grid-area: backpack1;
+    justify-self: end;
 }
 
+#backpack2 {
+    background-image: url('/assets/images/backpack_2.png');
+    position: sticky;
+    height: 150px;
+    width: 122px;
+    top: 120px;
+    border: solid 1px black;
+    grid-area: backpack2;
+    justify-self: end;
+}
+
+#backpack3 {
+    background-image: url('/assets/images/backpack_1.png');
+    position: sticky;
+    height: 150px;
+    width: 150px;
+    top: 420px;
+    border: solid 1px black;
+    grid-area: backpack3;
+    justify-self: center;
+}
+
+#backpack4 {
+    background-image: url('/assets/images/backpack_2.png');
+    position: sticky;
+    height: 150px;
+    width: 122px;
+    top: 570px;
+    border: solid 1px black;
+    grid-area: backpack4;
+    justify-self: start;
+}
+
+#suitcase1 {
+    background-image: url('/assets/images/suitcase_1.png');
+    position: sticky;
+    height: 150px;
+    width: 141px;
+    top: 120px;
+    right: 2rem;
+    border: solid 1px black;
+    grid-area: suitcase1;
+    justify-self: center;
+}
+
+#suitcase2 {
+    background-image: url('/assets/images/suitcase_2.png');
+    position: sticky;
+    height: 150px;
+    width: 114px;
+    top: 270px;
+    border: solid 1px black;
+    grid-area: suitcase2;
+    justify-self: start;
+}
+
+#suitcase3 {
+    background-image: url('/assets/images/suitcase_1.png');
+    position: sticky;
+    height: 150px;
+    width: 141px;
+    top: 420px;
+    border: solid 1px black;
+    grid-area: suitcase3;
+    justify-self: center;
+}
+
+#suitcase4 {
+    background-image: url('/assets/images/suitcase_2.png');
+    position: sticky;
+    height: 150px;
+    width: 114px;
+    top: 570px;
+    border: solid 1px black;
+    grid-area: suitcase4;
+    justify-self: center;
+}
+
+#experience_text_1 {
+    grid-area: et1;
+}
+
+#experience_text_2 {
+    grid-area: et2;
+}
+
+#experience_text_3 {
+    grid-area: et3;
+}
+
+#experience_text_4 {
+    grid-area: et4;
+}
+
+#experience_text_5 {
+    grid-area: et5;
+}
+
+#experience_text_6 {
+    grid-area: et6;
+}
+
+#experience_text_7 {
+    grid-area: et7;
+}
+
+#experience_text_8 {
+    grid-area: et8;
+}
+
+#experience_text_9 {
+    grid-area: et9;
+    justify-self: end;
+    font-family: 'Pacifico', Courier, monospace;
+}
 /* Commenting out the below grid approach to try and simplify the whole contents of the page into one grid for mobile devices, which will be reorganised for tablets and desktop in a later media query */
 
 
